@@ -5,7 +5,6 @@ import article from './test/data/article';
 export default (
   <WorldInArticle
     id={article.id}
-    variantName="world-in-main"
     slug={article.attributes.slug}
     title={article.attributes.title}
     flytitle={article.attributes.flytitle}

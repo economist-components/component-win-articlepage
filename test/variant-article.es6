@@ -42,36 +42,29 @@ describe('variant-article', () => {
         renderer = createRenderer();
       });
 
-      it('should render world-in-base by default', () => {
-        renderer.render(
-          <WorldInArticle
-            id={article.id}
-            slug={article.attributes.slug}
-            title={article.attributes.title}
-            flytitle={article.attributes.flytitle}
-            rubric={article.attributes.rubric}
-            mainImage={{
-              src: article.attributes.mainimage,
-              alt: article.attributes.imagealt,
-            }}
-            content={article.attributes.content}
-            sectionName={article.attributes.section}
-          />, {});
+      it('should render world-in-main by default', () => {
+        renderer.render(<WorldInArticle
+          id={article.id}
+          slug={article.attributes.slug}
+          title={article.attributes.title}
+          flytitle={article.attributes.flytitle}
+          rubric={article.attributes.rubric}
+          mainImage={{
+            src: article.attributes.mainimage,
+            alt: article.attributes.imagealt,
+          }}
+          content={article.attributes.content}
+          sectionName={article.attributes.section}
+        />, {});
         const renderOutput = renderer.getRenderOutput();
         const variantName = renderOutput.props.variantName;
         const components = renderOutput.props.components;
         variantName.should.equal('world-in-main');
-        components.ArticleHeader.name.should.equal('WinHeader');
-        components.ArticleSubheader.name.should.equal('WinSubheader');
-        components.ArticleBody.name.should.equal('ArticleBodyTemplate');
-        components.ArticleFooter.name.should.equal('WinFooter');
       });
 
-      it('should render world-in-predictors when passed this as its variantName', () => {
+      it('should render world-in-predictors when passed a particular section', () => {
         renderer.render(
           <WorldInArticle
-            variantName={'world-in-predictors'}
-
             id={article.id}
             slug={article.attributes.slug}
             title={article.attributes.title}
@@ -82,16 +75,12 @@ describe('variant-article', () => {
               alt: article.attributes.imagealt,
             }}
             content={article.attributes.content}
-            sectionName={article.attributes.section}
+            sectionName={'Predictors'}
           />, {});
         const renderOutput = renderer.getRenderOutput();
         const variantName = renderOutput.props.variantName;
         const components = renderOutput.props.components;
         variantName.should.equal('world-in-predictors');
-        components.ArticleHeader.name.should.equal('WinPredictorsHeader');
-        components.ArticleSubheader.name.should.equal('WinSubheader');
-        components.ArticleBody.name.should.equal('ArticleBodyTemplate');
-        components.ArticleFooter.name.should.equal('WinFooter');
       });
 
     });

@@ -3,7 +3,8 @@ import WorldInArticle from './variant-article';
 import mapSectionsToVariants from './map-sections-to-variants';
 
 export default mapSectionsToVariants({
-  'Section A': 'variant-a',
-  'Section B': 'variant-b',
-  'Section C': 'variant-c',
-})(WorldInArticle);
+  'Politics': 'world-in-main',
+  'Leaders': 'world-in-leader',
+  'Portraits': 'world-in-portrait',
+  'Predictors': 'world-in-predictors',
+}, 'world-in-main')(WorldInArticle);
