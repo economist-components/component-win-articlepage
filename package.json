@@ -1,16 +1,16 @@
 {
-  "name": "component-win-articlepage",
+  "name": "@economist/component-win-articlepage",
   "version": "1.0.0",
   "description": "Display an article with the world-in articletemplate",
   "author": "The Economist (http://economist.com)",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sebinsua/component-win-articlepage.git"
+    "url": "git+https://github.com/economist-components/component-win-articlepage.git"
   },
-  "homepage": "https://github.com/sebinsua/component-win-articlepage#readme",
+  "homepage": "https://github.com/economist-components/component-win-articlepage#readme",
   "bugs": {
-    "url": "https://github.com/sebinsua/component-win-articlepage/issues"
+    "url": "https://github.com/economist-components/component-win-articlepage/issues"
   },
   "main": "index.js",
   "files": [
