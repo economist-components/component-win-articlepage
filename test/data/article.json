@@ -54,22 +54,22 @@
     ],
     "section": "Politics",
     "mainimage": {
-      "1.0x": "/assets/1cab46323bec@1x.jpg",
-      "1.3x": "/assets/1cab46323bec@1.3x.jpg",
-      "1.4x": "/assets/1cab46323bec@1.4x.jpg",
-      "1.6x": "/assets/1cab46323bec@1.6x.jpg",
-      "2.0x": "/assets/1cab46323bec@2x.jpg",
-      "2.6x": "/assets/1cab46323bec@2.6x.jpg",
-      "3.3x": "/assets/1cab46323bec@3.3x.jpg"
+      "1.0x": "/example-assets/1cab46323bec@1x.jpg",
+      "1.3x": "/example-assets/1cab46323bec@1.3x.jpg",
+      "1.4x": "/example-assets/1cab46323bec@1.4x.jpg",
+      "1.6x": "/example-assets/1cab46323bec@1.6x.jpg",
+      "2.0x": "/example-assets/1cab46323bec@2x.jpg",
+      "2.6x": "/example-assets/1cab46323bec@2.6x.jpg",
+      "3.3x": "/example-assets/1cab46323bec@3.3x.jpg"
     },
     "tileimage": {
-      "1.0x": "/assets/19c0e5b43e9e@1x.jpg",
-      "1.3x": "/assets/19c0e5b43e9e@1.3x.jpg",
-      "1.4x": "/assets/19c0e5b43e9e@1.4x.jpg",
-      "1.6x": "/assets/19c0e5b43e9e@1.6x.jpg",
-      "2.0x": "/assets/19c0e5b43e9e@2x.jpg",
-      "2.6x": "/assets/19c0e5b43e9e@2.6x.jpg",
-      "3.3x": "/assets/19c0e5b43e9e@3.3x.jpg"
+      "1.0x": "/example-assets/19c0e5b43e9e@1x.jpg",
+      "1.3x": "/example-assets/19c0e5b43e9e@1.3x.jpg",
+      "1.4x": "/example-assets/19c0e5b43e9e@1.4x.jpg",
+      "1.6x": "/example-assets/19c0e5b43e9e@1.6x.jpg",
+      "2.0x": "/example-assets/19c0e5b43e9e@2x.jpg",
+      "2.6x": "/example-assets/19c0e5b43e9e@2.6x.jpg",
+      "3.3x": "/example-assets/19c0e5b43e9e@3.3x.jpg"
     },
     "title": "The peril beyond Putin",
     "toc": "If Russia breaks up",
