@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import classnames from 'classnames';
 
 import { ArticleFooterContainer } from '@economist/component-articletemplate/footer';
 import { defaultGenerateClassNameList } from '@economist/component-variantify';
@@ -15,9 +14,10 @@ const extendedFooterBylineDetailsClasses = [
 ];
 function BylineFooterContainer({ generateClassNameList = defaultGenerateClassNameList, children }) {
   return (
-    <div className={classnames(
-        generateClassNameList(`ArticleTemplate--byline-footer`), ...extendedFooterBylineClasses
-      )}
+    <div className={[
+        ...generateClassNameList(`ArticleTemplate--byline-footer`),
+        ...extendedFooterBylineClasses
+      ].join(' ')}
     >
       {children}
     </div>
@@ -49,14 +49,19 @@ export class WinFooter extends Component {
         <BylineFooterContainer generateClassNameList={generateClassNameList}>
           <h3
             itemProp="byline"
-            className={classnames(generateClassNameList(`ArticleTemplate--byline`), ...extendedFooterBylineClasses)}
+            className={[
+              ...generateClassNameList(`ArticleTemplate--byline`),
+              ...extendedFooterBylineClasses
+            ].join(' ')}
           >
             Zanny Minton Beddoes (TODO: Put byline in the data)
           </h3>
           <span
             itemProp="bylinedetails"
-            className={classnames(generateClassNameList(`ArticleTemplate--byline-details`),
-                                  ...extendedFooterBylineDetailsClasses)}
+            className={[
+              ...generateClassNameList(`ArticleTemplate--byline-details`),
+              ...extendedFooterBylineDetailsClasses
+            ].join(' ')}
           >
             business affairs editor, The Economist (TODO: Put byline details in the data)
           </span>

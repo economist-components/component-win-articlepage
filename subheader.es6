@@ -1,6 +1,5 @@
 /* eslint react/no-multi-comp: 0 */
 import React, { Component, PropTypes } from 'react';
-import classnames from 'classnames';
 
 import { ArticleSubheaderContainer } from '@economist/component-articletemplate/subheader';
 import { defaultGenerateClassNameList } from '@economist/component-variantify';
@@ -31,21 +30,28 @@ export class WinSubheader extends Component {
       <ArticleSubheaderContainer generateClassNameList={generateClassNameList}>
         <h2
           itemProp="byline"
-          className={classnames(generateClassNameList('ArticleTemplate--byline'), ...extendedSubheaderItemClasses)}
+          className={[
+            ...generateClassNameList('ArticleTemplate--byline'),
+            ...extendedSubheaderItemClasses
+          ].join(' ')}
         >
           TODO: Put byline in the data
         </h2>
         <h2
           itemProp="publishdate"
-          className={classnames(generateClassNameList('ArticleTemplate--pubdate'),
-                                ...extendedSubheaderItemClasses)}
+          className={[
+            ...generateClassNameList('ArticleTemplate--pubdate'),
+            ...extendedSubheaderItemClasses
+          ].join(' ')}
         >
           TODO: Put publish date in the data
         </h2>
         <h2
           itemProp="section"
-          className={classnames(generateClassNameList('ArticleTemplate--section-section'),
-                                ...extendedSubheaderItemClasses)}
+          className={[
+            ...generateClassNameList('ArticleTemplate--section-section'),
+            ...extendedSubheaderItemClasses
+          ].join(' ')}
         >
           {sectionName}
         </h2>
@@ -75,15 +81,19 @@ export class WinLeaderSubheader extends Component {
       <ArticleSubheaderContainer generateClassNameList={generateClassNameList}>
         <h2
           itemProp="publishdate"
-          className={classnames(generateClassNameList('ArticleTemplate--pubdate'),
-                                ...extendedSubheaderItemClasses)}
+          className={[
+            ...generateClassNameList('ArticleTemplate--pubdate'),
+            ...extendedSubheaderItemClasses
+          ].join(' ')}
         >
           TODO: Put publish date in the data
         </h2>
         <h2
           itemProp="section"
-          className={classnames(generateClassNameList('ArticleTemplate--section-section'),
-                                ...extendedSubheaderItemClasses)}
+          className={[
+            ...generateClassNameList('ArticleTemplate--section-section'),
+            ...extendedSubheaderItemClasses
+          ].join(' ')}
         >
           {sectionName}
         </h2>

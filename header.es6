@@ -1,6 +1,5 @@
 /* eslint react/no-multi-comp: 0, one-var: 0 */
 import React, { Component, PropTypes } from 'react';
-import classnames from 'classnames';
 
 import { defaultGenerateClassNameList } from '@economist/component-variantify';
 import { getSrcSet } from '@economist/component-articletemplate/utils';
@@ -38,7 +37,10 @@ export class WinHeader extends Component {
       flytitleEl = (
         <h1
           itemProp="headline"
-          className={classnames(generateClassNameList('ArticleTemplate--flytitle'), ...extendedHeaderItemClasses)}
+          className={[
+            ...generateClassNameList('ArticleTemplate--flytitle'),
+            ...extendedHeaderItemClasses
+          ].join(' ')}
         >
           {flytitle}
         </h1>
@@ -48,7 +50,10 @@ export class WinHeader extends Component {
       titleEl = (
         <h1
           itemProp="alternativeHeadline"
-          className={classnames(generateClassNameList('ArticleTemplate--title'), ...extendedHeaderItemClasses)}
+          className={[
+            ...generateClassNameList('ArticleTemplate--title'),
+            ...extendedHeaderItemClasses
+          ].join(' ')}
         >
           {title}
         </h1>
@@ -58,7 +63,10 @@ export class WinHeader extends Component {
       rubricEl = (
         <h3
           itemProp="rubric"
-          className={classnames(generateClassNameList('ArticleTemplate--rubric'), ...extendedHeaderItemClasses)}
+          className={[
+            ...generateClassNameList('ArticleTemplate--rubric'),
+            ...extendedHeaderItemClasses
+          ].join(' ')}
         >
           {rubric}
         </h3>
@@ -67,7 +75,7 @@ export class WinHeader extends Component {
     if (mainImage) {
       mainImageEl = (
         <img
-          className={classnames(generateClassNameList('ArticleTemplate--image'))}
+          className={generateClassNameList('ArticleTemplate--image').join(' ')}
           src={`${mainImage.src['1.0x']}`}
           srcSet={getSrcSet(mainImage.src)}
           alt={mainImage.alt}
@@ -116,7 +124,10 @@ export class WinPredictorsHeader extends Component {
       flytitleEl = (
         <h1
           itemProp="headline"
-          className={classnames(generateClassNameList('ArticleTemplate--flytitle'), ...extendedHeaderItemClasses)}
+          className={[
+            ...generateClassNameList('ArticleTemplate--flytitle'),
+            ...extendedHeaderItemClasses
+          ].join(' ')}
         >
           {flytitle}
         </h1>
@@ -126,7 +137,10 @@ export class WinPredictorsHeader extends Component {
       titleEl = (
         <h1
           itemProp="alternativeHeadline"
-          className={classnames(generateClassNameList('ArticleTemplate--title'), ...extendedHeaderItemClasses)}
+          className={[
+            ...generateClassNameList('ArticleTemplate--title'),
+            ...extendedHeaderItemClasses
+          ].join(' ')}
         >
           {title}
         </h1>
@@ -136,7 +150,10 @@ export class WinPredictorsHeader extends Component {
       rubricEl = (
         <h3
           itemProp="rubric"
-          className={classnames(generateClassNameList('ArticleTemplate--rubric'), ...extendedHeaderItemClasses)}
+          className={[
+            ...generateClassNameList('ArticleTemplate--rubric'),
+            ...extendedHeaderItemClasses
+          ].join(' ')}
         >
           {rubric}
         </h3>
@@ -146,7 +163,7 @@ export class WinPredictorsHeader extends Component {
       mainImageEl = (
         <ImageContainer generateClassNameList={generateClassNameList}>
           <img
-            className={classnames(generateClassNameList('ArticleTemplate--image'))}
+            className={generateClassNameList('ArticleTemplate--image').join(' ')}
             src={`${mainImage.src['1.0x']}`}
             srcSet={getSrcSet(mainImage.src)}
             alt={mainImage.alt}
