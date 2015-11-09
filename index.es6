@@ -1,8 +1,7 @@
-import React from 'react';
-import WorldInArticle from './variant-article';
-
 import mapProps from 'map-props';
 import { sectionToVariant, injectComponent } from './prop-transforms';
+
+import WorldInArticle from './variant-article';
 
 const sectionNameToVariantNameMap = {
   'Politics': 'world-in-main',
@@ -14,13 +13,12 @@ const defaultVariantName = 'world-in-main';
 
 const advertAfterParagraphLine = 5;
 const advertDefinition = {
-  "component": "AdvertisementPanel",
-  "props": {
-    "adTag": "/5605/teg.fmsq/wdif/tech"
+  'component': 'AdvertisementPanel',
+  'props': {
+    'adTag': '/5605/teg.fmsq/wdif/tech',
   },
 };
-
 export default mapProps({
- 'variantName': sectionToVariant(sectionNameToVariantNameMap, defaultVariantName),
- 'content': injectComponent(advertAfterParagraphLine, advertDefinition)
+  'variantName': sectionToVariant(sectionNameToVariantNameMap, defaultVariantName),
+  'content': injectComponent(advertAfterParagraphLine, advertDefinition, 'advert'),
 })(WorldInArticle);
