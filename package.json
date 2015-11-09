@@ -126,10 +126,11 @@
     "watch": "parallelshell 'npm run doc:watch' 'npm run prepublish:watch' 'npm run serve'"
   },
   "dependencies": {
-    "react": "^0.14.2",
+    "@economist/component-ad-panel": "^1.0.3",
     "@economist/component-articletemplate": "^7.0.2",
     "@economist/component-variantify": "^1.0.1",
-    "map-props": "^1.0.0"
+    "map-props": "^1.0.0",
+    "react": "^0.14.2"
   },
   "devDependencies": {
     "@economist/component-devpack": "^3.5.0",
