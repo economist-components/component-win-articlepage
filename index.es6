@@ -1,7 +1,9 @@
+import { PropTypes } from 'react';
+
 import mapProps from 'map-props';
 import { sectionToVariant, injectComponent } from './prop-transforms';
 
-import WorldInArticle from './variant-article';
+import VariantArticle from './variant-article';
 
 const sectionNameToVariantNameMap = {
   'Politics': 'world-in-main',
@@ -18,7 +20,18 @@ const advertDefinition = {
     'adTag': '/5605/teg.fmsq/wdif/tech',
   },
 };
-export default mapProps({
+
+const WorldInArticle = mapProps({
   'variantName': sectionToVariant(sectionNameToVariantNameMap, defaultVariantName),
   'content': injectComponent(advertAfterParagraphLine, advertDefinition, 'advert'),
-})(WorldInArticle);
+})(VariantArticle);
+WorldInArticle.propTypes = {
+  sectionName: PropTypes.string,
+  content: PropTypes.arrayOf(PropTypes.oneOfType([ PropTypes.string, PropTypes.object ])),
+  advert: PropTypes.shape({
+    adTag: PropTypes.string,
+    reserveHeight: PropTypes.number,
+  }),
+};
+
+export default WorldInArticle;
