@@ -15,6 +15,8 @@ export class WinSubheader extends Component {
     return {
       generateClassNameList: PropTypes.func,
       sectionName: PropTypes.string,
+      byline: PropTypes.string,
+      publishDate: PropTypes.string,
     };
   }
 
@@ -25,32 +27,33 @@ export class WinSubheader extends Component {
   }
 
   render() {
-    const { generateClassNameList, sectionName } = this.props;
+    const { generateClassNameList, sectionName, byline, publishDate } = this.props;
+    const formattedPublishDate = new Date(publishDate).toDateString();
     return (
       <ArticleSubheaderContainer generateClassNameList={generateClassNameList}>
         <h2
           itemProp="byline"
           className={[
             ...generateClassNameList('ArticleTemplate--byline'),
-            ...extendedSubheaderItemClasses
+            ...extendedSubheaderItemClasses,
           ].join(' ')}
         >
-          TODO: Put byline in the data
+          {byline}
         </h2>
         <h2
-          itemProp="publishdate"
+          itemProp="publishDate"
           className={[
             ...generateClassNameList('ArticleTemplate--pubdate'),
-            ...extendedSubheaderItemClasses
+            ...extendedSubheaderItemClasses,
           ].join(' ')}
         >
-          TODO: Put publish date in the data
+          {formattedPublishDate}
         </h2>
         <h2
           itemProp="section"
           className={[
             ...generateClassNameList('ArticleTemplate--section-section'),
-            ...extendedSubheaderItemClasses
+            ...extendedSubheaderItemClasses,
           ].join(' ')}
         >
           {sectionName}
@@ -66,6 +69,7 @@ export class WinLeaderSubheader extends Component {
     return {
       generateClassNameList: PropTypes.func,
       sectionName: PropTypes.string,
+      publishDate: PropTypes.string,
     };
   }
 
@@ -76,23 +80,24 @@ export class WinLeaderSubheader extends Component {
   }
 
   render() {
-    const { generateClassNameList, sectionName } = this.props;
+    const { generateClassNameList, sectionName, publishDate } = this.props;
+    const formattedPublishDate = new Date(publishDate).toDateString();
     return (
       <ArticleSubheaderContainer generateClassNameList={generateClassNameList}>
         <h2
-          itemProp="publishdate"
+          itemProp="publishDate"
           className={[
             ...generateClassNameList('ArticleTemplate--pubdate'),
-            ...extendedSubheaderItemClasses
+            ...extendedSubheaderItemClasses,
           ].join(' ')}
         >
-          TODO: Put publish date in the data
+          {formattedPublishDate}
         </h2>
         <h2
           itemProp="section"
           className={[
             ...generateClassNameList('ArticleTemplate--section-section'),
-            ...extendedSubheaderItemClasses
+            ...extendedSubheaderItemClasses,
           ].join(' ')}
         >
           {sectionName}
