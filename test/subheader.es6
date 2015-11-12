@@ -38,10 +38,12 @@ describe('subheader', () => {
         renderer.render(
           <WinSubheader
             sectionName={'The section name'}
+            byline={'the byline'}
+            publishDate={'2015-09-29T16:45:56.698Z'}
           />, {});
         const out = $(renderer.getRenderOutput());
-        out.first('.ArticleTemplate--byline').text().should.equal('TODO: Put byline in the data');
-        out.first('.ArticleTemplate--pubdate').text().should.equal('TODO: Put publish date in the data');
+        out.first('.ArticleTemplate--byline').text().should.equal('the byline');
+        out.first('.ArticleTemplate--pubdate').text().should.equal('Tue Sep 29 2015');
         out.first('.ArticleTemplate--section-section').text().should.equal('The section name');
       });
 
@@ -70,9 +72,10 @@ describe('subheader', () => {
         renderer.render(
           <WinLeaderSubheader
             sectionName={'The section name'}
+            publishDate={'2015-09-29T16:45:56.698Z'}
           />, {});
         const out = $(renderer.getRenderOutput());
-        out.first('.ArticleTemplate--pubdate').text().should.equal('TODO: Put publish date in the data');
+        out.first('.ArticleTemplate--pubdate').text().should.equal('Tue Sep 29 2015');
         out.first('.ArticleTemplate--section-section').text().should.equal('The section name');
       });
 

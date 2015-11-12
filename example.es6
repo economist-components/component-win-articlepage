@@ -6,6 +6,9 @@ export default (
   <WorldInArticle
     id={article.id}
     slug={article.attributes.slug}
+    byline={article.attributes.byline}
+    bylineLocation={article.attributes.byline_location}
+    publishDate={article.publishDate}
     title={article.attributes.title}
     flytitle={article.attributes.flytitle}
     rubric={article.attributes.rubric}
