@@ -17,7 +17,8 @@ const advertAfterParagraphLine = 5;
 const advertDefinition = {
   'component': 'AdvertisementPanel',
   'props': {
-    'adTag': '/5605/teg.fmsq/wdif/tech',
+    'adTag': '/5605/theworldin',
+    'sizes': [ [ 970, 250 ], [ 1024, 768 ], [ 1, 1 ], [ 300, 250 ], [ 728, 90 ] ],
   },
 };
 
