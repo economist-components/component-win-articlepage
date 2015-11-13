@@ -1,17 +1,9 @@
 import { PropTypes } from 'react';
 
 import mapProps from 'map-props';
-import { sectionToVariant, injectComponent } from './prop-transforms';
+import { injectComponent } from './prop-transforms';
 
 import VariantArticle from './variant-article';
-
-const sectionNameToVariantNameMap = {
-  'Politics': 'world-in-main',
-  'Leaders': 'world-in-leader',
-  'Portraits': 'world-in-portrait',
-  'Predictors': 'world-in-predictors',
-};
-const defaultVariantName = 'world-in-main';
 
 const advertAfterParagraphLine = 5;
 const advertDefinition = {
@@ -23,7 +15,6 @@ const advertDefinition = {
 };
 
 const WorldInArticle = mapProps({
-  'variantName': sectionToVariant(sectionNameToVariantNameMap, defaultVariantName),
   'content': injectComponent(advertAfterParagraphLine, advertDefinition, 'advert'),
 })(VariantArticle);
 WorldInArticle.propTypes = {

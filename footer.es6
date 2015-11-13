@@ -15,9 +15,9 @@ const extendedFooterBylineDetailsClasses = [
 function BylineFooterContainer({ generateClassNameList = defaultGenerateClassNameList, children }) {
   return (
     <div className={[
-        ...generateClassNameList(`ArticleTemplate--byline-footer`),
-        ...extendedFooterBylineClasses
-      ].join(' ')}
+      ...generateClassNameList(`ArticleTemplate--byline-footer`),
+      ...extendedFooterBylineClasses,
+    ].join(' ')}
     >
       {children}
     </div>
@@ -33,6 +33,8 @@ export class WinFooter extends Component {
   static get propTypes() {
     return {
       generateClassNameList: PropTypes.func,
+      byline: PropTypes.string,
+      bylineLocation: PropTypes.string,
     };
   }
 
@@ -43,7 +45,7 @@ export class WinFooter extends Component {
   }
 
   render() {
-    const { generateClassNameList } = this.props;
+    const { generateClassNameList, byline, bylineLocation } = this.props;
     return (
       <ArticleFooterContainer generateClassNameList={generateClassNameList}>
         <BylineFooterContainer generateClassNameList={generateClassNameList}>
@@ -51,19 +53,19 @@ export class WinFooter extends Component {
             itemProp="byline"
             className={[
               ...generateClassNameList(`ArticleTemplate--byline`),
-              ...extendedFooterBylineClasses
+              ...extendedFooterBylineClasses,
             ].join(' ')}
           >
-            Zanny Minton Beddoes (TODO: Put byline in the data)
+            {byline}
           </h3>
           <span
             itemProp="bylinedetails"
             className={[
               ...generateClassNameList(`ArticleTemplate--byline-details`),
-              ...extendedFooterBylineDetailsClasses
+              ...extendedFooterBylineDetailsClasses,
             ].join(' ')}
           >
-            business affairs editor, The Economist (TODO: Put byline details in the data)
+            {bylineLocation}
           </span>
         </BylineFooterContainer>
       </ArticleFooterContainer>
