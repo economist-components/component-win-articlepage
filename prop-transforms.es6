@@ -1,9 +1,3 @@
-export function sectionToVariant(sectionNameToVariantName, defaultVariant) {
-  return ({ sectionName }) => {
-    return sectionNameToVariantName[sectionName] || defaultVariant;
-  };
-}
-
 function getNthParagraphIndex(paragraphLine, content) {
   let lastParagraphIndex = 0;
   let currentIndex = 0;
