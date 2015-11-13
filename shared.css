@@ -112,13 +112,21 @@
   text-transform: uppercase;
 }
 
-.ArticleTemplate--byline-details {
+.ArticleTemplate--byline-bio,
+.ArticleTemplate--byline-location {
   font-size: 14px;
   font-family: "Officina";
   color: var(--color-dark-grey);
-  font-style: italic;
-  margin: 0 0 40px 3%;
+  margin-left: 3%;
   float: left;
+}
+
+.ArticleTemplate--byline-location {
+  font-style: italic;
+}
+
+.ArticleTemplate--byline-bio {
+  margin-bottom: 40px;
 }
 
 .ArticleTemplate--byline-footer {
@@ -257,7 +265,7 @@
   }
 
   .ArticleTemplate--byline-footer .ArticleTemplate--byline,
-  .ArticleTemplate--byline-details {
+  .ArticleTemplate--byline-location {
     margin: 0;
   }
 
