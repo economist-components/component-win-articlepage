@@ -51,7 +51,6 @@ export class WinFooter extends Component {
       <ArticleFooterContainer generateClassNameList={generateClassNameList}>
         <BylineFooterContainer generateClassNameList={generateClassNameList}>
           <h3
-            itemProp="byline"
             className={[
               ...generateClassNameList(`ArticleTemplate--byline`),
               ...extendedFooterBylineClasses,
@@ -60,7 +59,6 @@ export class WinFooter extends Component {
             {byline}
           </h3>
           <span
-            itemProp="bylineLocation"
             className={[
               ...generateClassNameList(`ArticleTemplate--byline-location`),
               ...extendedFooterBylineDetailsClasses,
@@ -70,7 +68,6 @@ export class WinFooter extends Component {
           </span>
 
           <span
-            itemProp="bio"
             className={[
               ...generateClassNameList(`ArticleTemplate--byline-bio`),
               ...extendedFooterBylineDetailsClasses,
