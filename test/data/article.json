@@ -54,13 +54,7 @@
     ],
     "section": "Politics",
     "mainimage": {
-      "1.0x": "/example-assets/1cab46323bec@1x.jpg",
-      "1.3x": "/example-assets/1cab46323bec@1.3x.jpg",
-      "1.4x": "/example-assets/1cab46323bec@1.4x.jpg",
-      "1.6x": "/example-assets/1cab46323bec@1.6x.jpg",
-      "2.0x": "/example-assets/1cab46323bec@2x.jpg",
-      "2.6x": "/example-assets/1cab46323bec@2.6x.jpg",
-      "3.3x": "/example-assets/1cab46323bec@3.3x.jpg"
+      "src": "http://cms-worldin.economist.com/sites/default/files/styles/base_leader__max-width_480_/public/20151119_EUP007_1190x967.jpg?itok=AFwB7A2_"
     },
     "tileimage": {
       "1.0x": "/example-assets/19c0e5b43e9e@1x.jpg",

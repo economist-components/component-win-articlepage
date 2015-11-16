@@ -76,8 +76,7 @@ export class WinHeader extends Component {
       mainImageEl = (
         <img
           className={generateClassNameList('ArticleTemplate--image').join(' ')}
-          src={`${mainImage.src['1.0x']}`}
-          srcSet={getSrcSet(mainImage.src)}
+          src={`${mainImage.src}`}
           alt={mainImage.alt}
           itemProp="image"
         />
