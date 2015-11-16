@@ -54,9 +54,9 @@
 .world-in-predictors-ArticleTemplate--flytitle {
   display: block;
   color: var(--color-red);
-  font-family: "Officina-Bold";
+  font-family: "Officina";
   font-size: 21px;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 18px;
   padding: 0 0 5px 3%;
   margin: 40px 0 0 0;
