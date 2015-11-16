@@ -14,7 +14,7 @@ export default (
     flytitle={article.attributes.flytitle}
     rubric={article.attributes.rubric}
     mainImage={{
-      src: article.attributes.mainimage,
+      src: article.attributes.mainimage.src,
       alt: article.attributes.imagealt,
     }}
     content={article.attributes.content}
