@@ -1,6 +1,7 @@
 {
   "type": "posts",
   "id": "2",
+  "publishDate": "2015-09-29T16:45:56.698Z",
   "attributes": {
     "metaTags": [
       {
@@ -68,6 +69,9 @@
     "title": "The peril beyond Putin",
     "toc": "If Russia breaks up",
     "flytitle": "If Russia breaks up",
+    "byline": "Fiammetta Rocco",
+    "byline_location": "Mumbai",
+    "bio": "<strong>Fiammetta Rocco</strong>: books and arts editor, <em>The Economist</em>",
     "slug": "what-if-russia-breaks-up-the-peril-beyond-putin",
     "dateline": "MOSCOW",
     "rubric": "The world rightly worries about the prospect of a Greater Russia. But a Lesser Russia could be just as troubling",

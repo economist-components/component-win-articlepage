@@ -15,9 +15,9 @@ const extendedFooterBylineDetailsClasses = [
 function BylineFooterContainer({ generateClassNameList = defaultGenerateClassNameList, children }) {
   return (
     <div className={[
-        ...generateClassNameList(`ArticleTemplate--byline-footer`),
-        ...extendedFooterBylineClasses
-      ].join(' ')}
+      ...generateClassNameList(`ArticleTemplate--byline-footer`),
+      ...extendedFooterBylineClasses,
+    ].join(' ')}
     >
       {children}
     </div>
@@ -33,6 +33,9 @@ export class WinFooter extends Component {
   static get propTypes() {
     return {
       generateClassNameList: PropTypes.func,
+      byline: PropTypes.string,
+      bylineLocation: PropTypes.string,
+      bio: PropTypes.string,
     };
   }
 
@@ -41,32 +44,41 @@ export class WinFooter extends Component {
       generateClassNameList: defaultGenerateClassNameList,
     };
   }
-
+  /* eslint-disable react/no-danger */
   render() {
-    const { generateClassNameList } = this.props;
+    const { generateClassNameList, byline, bylineLocation, bio } = this.props;
     return (
       <ArticleFooterContainer generateClassNameList={generateClassNameList}>
         <BylineFooterContainer generateClassNameList={generateClassNameList}>
           <h3
-            itemProp="byline"
             className={[
               ...generateClassNameList(`ArticleTemplate--byline`),
-              ...extendedFooterBylineClasses
+              ...extendedFooterBylineClasses,
             ].join(' ')}
           >
-            Zanny Minton Beddoes (TODO: Put byline in the data)
+            {byline}
           </h3>
           <span
-            itemProp="bylinedetails"
             className={[
-              ...generateClassNameList(`ArticleTemplate--byline-details`),
-              ...extendedFooterBylineDetailsClasses
+              ...generateClassNameList(`ArticleTemplate--byline-location`),
+              ...extendedFooterBylineDetailsClasses,
             ].join(' ')}
           >
-            business affairs editor, The Economist (TODO: Put byline details in the data)
+            {bylineLocation}
           </span>
+
+          <span
+            className={[
+              ...generateClassNameList(`ArticleTemplate--byline-bio`),
+              ...extendedFooterBylineDetailsClasses,
+            ].join(' ')}
+            dangerouslySetInnerHTML={{
+              '__html': bio,
+            }}
+          />
         </BylineFooterContainer>
       </ArticleFooterContainer>
     );
   }
+  /* eslint-enable react/no-danger */
 }

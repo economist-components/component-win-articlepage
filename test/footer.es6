@@ -25,17 +25,32 @@ describe('footer', () => {
 
     describe('Rendering', () => {
 
-      let renderer;
+      let renderer = '';
       beforeEach(() => {
         renderer = createRenderer();
       });
 
-      // NOTE: Switched off until we begin passing data in.
-      xit('should contain the data passed in within its HTML structure', () => {
-        renderer.render(<WinFooter />, {});
+      it('should contain the data passed in within its HTML structure', () => {
+        renderer.render(
+          <WinFooter
+            byline={'the byline'}
+            bylineLocation={'the byline location'}
+            bio={'the bio'}
+          />, {}
+        );
+
         const out = $(renderer.getRenderOutput());
-        out.first('.ArticleTemplate--byline').text().should.equal('Zanny Minton Beddoes');
-        out.first('.ArticleTemplate--byline-details').text().should.equal('business affairs editor, The Economist');
+        out.first('.ArticleTemplate--byline')
+          .text()
+          .should.equal('the byline');
+
+        out.first('.ArticleTemplate--byline-location')
+          .text()
+          .should.equal('the byline location');
+
+        out.first('.ArticleTemplate--byline-bio')[0] // eslint-disable-line
+          .props.dangerouslySetInnerHTML.__html
+          .should.equal('the bio');
       });
 
     });
