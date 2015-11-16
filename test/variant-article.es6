@@ -55,6 +55,7 @@ describe('variant-article', () => {
           }}
           content={article.attributes.content}
           sectionName={article.attributes.section}
+          variantName={'world-in-main'}
         />, {});
         const renderOutput = renderer.getRenderOutput();
         const variantName = renderOutput.props.variantName;
@@ -76,6 +77,7 @@ describe('variant-article', () => {
             }}
             content={article.attributes.content}
             sectionName={'Predictors'}
+            variantName={'world-in-predictors'}
           />, {});
         const renderOutput = renderer.getRenderOutput();
         const variantName = renderOutput.props.variantName;

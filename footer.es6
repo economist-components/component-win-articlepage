@@ -35,6 +35,7 @@ export class WinFooter extends Component {
       generateClassNameList: PropTypes.func,
       byline: PropTypes.string,
       bylineLocation: PropTypes.string,
+      bio: PropTypes.string,
     };
   }
 
@@ -43,14 +44,13 @@ export class WinFooter extends Component {
       generateClassNameList: defaultGenerateClassNameList,
     };
   }
-
+  /* eslint-disable react/no-danger */
   render() {
-    const { generateClassNameList, byline, bylineLocation } = this.props;
+    const { generateClassNameList, byline, bylineLocation, bio } = this.props;
     return (
       <ArticleFooterContainer generateClassNameList={generateClassNameList}>
         <BylineFooterContainer generateClassNameList={generateClassNameList}>
           <h3
-            itemProp="byline"
             className={[
               ...generateClassNameList(`ArticleTemplate--byline`),
               ...extendedFooterBylineClasses,
@@ -59,16 +59,26 @@ export class WinFooter extends Component {
             {byline}
           </h3>
           <span
-            itemProp="bylinedetails"
             className={[
-              ...generateClassNameList(`ArticleTemplate--byline-details`),
+              ...generateClassNameList(`ArticleTemplate--byline-location`),
               ...extendedFooterBylineDetailsClasses,
             ].join(' ')}
           >
             {bylineLocation}
           </span>
+
+          <span
+            className={[
+              ...generateClassNameList(`ArticleTemplate--byline-bio`),
+              ...extendedFooterBylineDetailsClasses,
+            ].join(' ')}
+            dangerouslySetInnerHTML={{
+              '__html': bio,
+            }}
+          />
         </BylineFooterContainer>
       </ArticleFooterContainer>
     );
   }
+  /* eslint-enable react/no-danger */
 }
