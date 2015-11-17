@@ -10,7 +10,13 @@ const advertDefinition = {
   'component': 'AdvertisementPanel',
   'props': {
     'adTag': '/5605/theworldin',
-    'sizes': [ [ 970, 250 ], [ 1024, 768 ], [ 1, 1 ], [ 300, 250 ], [ 728, 90 ] ],
+    'sizes': [ [ 0, 0 ] ],
+    'sizeMapping': [
+        [ [ 1024, 1 ], [ [ 1024, 768 ], [ 970, 250 ], [ 728, 90 ] ] ],
+        [ [ 768, 1 ], [ [ 728, 90 ], [ 300, 250 ] ] ],
+        [ [ 320, 1 ], [ [ 300, 250 ], [ 1, 1 ] ] ],
+    ],
+    reserveHeight: 100,
   },
 };
 
