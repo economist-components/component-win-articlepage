@@ -4,6 +4,7 @@ import React, { Component, PropTypes } from 'react';
 import { defaultGenerateClassNameList } from '@economist/component-variantify';
 import { getSrcSet } from '@economist/component-articletemplate/utils';
 import { isImage } from '@economist/component-articletemplate/proptypes';
+import Picture from '@economist/component-picture';
 
 import { ArticleHeaderContainer, ImageContainer } from '@economist/component-articletemplate/header';
 
@@ -16,7 +17,7 @@ export class WinHeader extends Component {
   static get propTypes() {
     return {
       generateClassNameList: PropTypes.func,
-      mainImage: isImage,
+      mainImage: PropTypes.shape(Picture.propTypes || {}),
       flytitle: PropTypes.string,
       title: PropTypes.string,
       rubric: PropTypes.string,
@@ -74,11 +75,10 @@ export class WinHeader extends Component {
     }
     if (mainImage) {
       mainImageEl = (
-        <img
+        <Picture
           className={generateClassNameList('ArticleTemplate--image').join(' ')}
-          src={`${mainImage.src}`}
-          alt={mainImage.alt}
           itemProp="image"
+          {...mainImage}
         />
       );
     }
@@ -161,12 +161,10 @@ export class WinPredictorsHeader extends Component {
     if (mainImage) {
       mainImageEl = (
         <ImageContainer generateClassNameList={generateClassNameList}>
-          <img
+          <Picture
             className={generateClassNameList('ArticleTemplate--image').join(' ')}
-            src={`${mainImage.src['1.0x']}`}
-            srcSet={getSrcSet(mainImage.src)}
-            alt={mainImage.alt}
             itemProp="image"
+            {...mainImage}
           />
         </ImageContainer>
       );

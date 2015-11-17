@@ -13,10 +13,7 @@ export default (
     title={article.attributes.title}
     flytitle={article.attributes.flytitle}
     rubric={article.attributes.rubric}
-    mainImage={{
-      src: article.attributes.mainimage.src,
-      alt: article.attributes.imagealt,
-    }}
+    mainImage={article.attributes.mainimage}
     content={article.attributes.content}
     sectionName={article.attributes.section}
   />
