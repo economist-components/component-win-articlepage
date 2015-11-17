@@ -1,6 +1,6 @@
 {
   "name": "@economist/component-win-articlepage",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Display an article with the world-in articletemplate",
   "author": "The Economist (http://economist.com)",
   "license": "ISC",
@@ -127,7 +127,7 @@
     "watch": "parallelshell 'npm run doc:watch' 'npm run prepublish:watch' 'npm run serve'"
   },
   "dependencies": {
-    "@economist/component-ad-panel": "^1.0.3",
+    "@economist/component-ad-panel": "^1.1.0",
     "@economist/component-articletemplate": "^8.0.0",
     "@economist/component-variantify": "^1.0.1",
     "map-props": "^1.0.0",
