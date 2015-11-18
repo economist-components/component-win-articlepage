@@ -29,7 +29,7 @@ const config = {
       ArticleFooter: WinFooter,
     },
     'world-in-predictors': {
-      ArticleHeader: WinPredictorsHeader,
+      ArticleHeader: WinHeader,
       ArticleSubheader: WinSubheader,
       ArticleBody: WinArticleBody,
       ArticleFooter: WinFooter,

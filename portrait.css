@@ -11,7 +11,11 @@
   margin-left: 7.5%;
   width: 83.1%;
   position: absolute;
-  bottom: 0;
+  bottom: -40px;
+}
+
+.world-in-portrait-ArticleTemplate--subheader {
+  margin-top: 40px;
 }
 
 .world-in-portrait-ArticleTemplate--header:after {
@@ -59,7 +63,6 @@
 
 .world-in-portrait-ArticleTemplate--image {
     position: relative;
-    top: -40px;
 }
 
 @media screen and (max-width: 860px) {
@@ -75,7 +78,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .world-in-portrait-ArticleTemplate--header {
+  /*.world-in-portrait-ArticleTemplate--header {
     margin-top: -35%;
     position: relative;
   }
@@ -88,8 +91,31 @@
 
   .world-in-portrait-ArticleTemplate--image {
     position: relative;
-    top: 30px;
-    transform: scale(1.4);
-    left: -58px;
+    top: 120px;
+  }*/
+
+  .world-in-portrait-ArticleTemplate--header {
+    /*position: absolute;
+    top: 0;*/
+    margin-top: 0;
+    /*margin-top: -130px;*/
+    top: 20px;
+
+  }
+
+  .world-in-portrait-ArticleTemplate--title {
+    line-height: inherit;
+    padding: 0 0 5px 3%;
+    min-height: 280px;
+
+  }
+  .world-in-portrait-ArticleTemplate--image {
+    position: absolute;
+    top: 12%;
+  }
+
+  .world-in-portrait-ArticleTemplate--subheader {
+    margin-top: 0;
+    padding-top: 16px;
   }
 }
