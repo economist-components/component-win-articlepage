@@ -1,24 +1,6 @@
 .world-in-predictors-ArticleTemplate--container {
   background-color: #e6f0f5;
-  /*padding-top: 40px;*/
 }
-
-/*.world-in-predictors-ArticleTemplate--header {
-  height: auto;
-  min-height: 140px;
-  border-left: 1px solid var(--color-red);
-  margin-left: 7.5%;
-  width: 83.1%;
-  bottom: 0;
-  background-color: transparent;
-  position: relative;
-  border: 0;
-  margin-bottom: -18px;
-  min-height: 50px;
-}*/
-
-
-
 
 .world-in-predictors-ArticleTemplate--header {
     background-color: rgba(0, 0, 0, 0);
@@ -72,17 +54,12 @@
 }
 
 .world-in-predictors-ArticleTemplate--rubric {
-  /*float: left;*/
   padding-top: 10px;
   padding-bottom: 13px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 3%;
 }
-
-/*.world-in-predictors-ArticleTemplate--subheader {
-  clear: both;
-}*/
 
 .world-in-predictors-ArticleTemplate--byline {
   padding-top: 15px;
@@ -95,35 +72,22 @@
   }
   .world-in-predictors-ArticleTemplate--title,
   .world-in-predictors-ArticleTemplate--rubric {
-    width: 50%;
+    width: 65%;
   }
   .world-in-predictors-ArticleTemplate--rubric {
     padding-bottom: 0;
   }
-
-  /*.world-in-predictors-ArticleTemplate--header {
-    position: relative;
-    margin-top: 0;
-  }*/
 }
 
 @media screen and (max-width: 700px) {
 
   .world-in-predictors-ArticleTemplate--header {
-    top: 0;
+    top: 20px;
   }
 
   .world-in-predictors-ArticleTemplate--image {
     padding-top: 190px;
 }
-
-
-  /*.world-in-predictors-ArticleTemplate--image {
-    float: right;
-    position: initial;
-    width: 60%;
-    height: auto;
-  }*/
 
   .world-in-predictors-ArticleTemplate--rubric {
     width: 100%;
@@ -136,13 +100,7 @@
 
 @media screen and (max-width: 480px) {
   .world-in-predictors-ArticleTemplate--container {
-    /*padding-top: 20px;*/
   }
-
-  /*.world-in-predictors-ArticleTemplate--header {
-    margin-top: 0;
-    position: relative;
-  }*/
 
   .world-in-predictors-ArticleTemplate--rubric {
     font-size: 22px;
