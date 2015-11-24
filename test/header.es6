@@ -8,7 +8,7 @@ import $ from 'teaspoon';
 import chai from 'chai';
 const should = chai.should();
 describe('header', () => {
-
+  const renderer = createRenderer();
   it('has WinHeader exposed', () => {
     should.exist(WinHeader);
   });
@@ -18,7 +18,6 @@ describe('header', () => {
   });
 
   describe('WinHeader', () => {
-
     it('is compatible with React.Component', () => {
       WinHeader.should.be.a('function').and.respondTo('render');
     });
@@ -28,26 +27,20 @@ describe('header', () => {
     });
 
     describe('Rendering', () => {
-
-      let renderer;
-      beforeEach(() => {
-        renderer = createRenderer();
-      });
-
       it('should contain the data passed in within its HTML structure', () => {
         renderer.render(
           <WinHeader
             mainImage={{
-              'src': {
-                '1.0x': '/assets/1cab46323bec@1x.jpg',
-              },
+              'sources': [
+                { 'url': 'https://placehold.it/1792x1008', 'width': 896, 'height': 504, 'dppx': 1 },
+              ],
             }}
             flytitle={'Pretty fly'}
             title={'For a white guy'}
             rubric={'uno dos tres cuatro cinco cinco seis'}
           />, {});
         const out = $(renderer.getRenderOutput());
-        out.first('.ArticleTemplate--image')[0].props.src.should.equal('/assets/1cab46323bec@1x.jpg');
+        out.first('.ArticleTemplate--image')[0].props.sources[0].url.should.equal('https://placehold.it/1792x1008');
         out.first('.ArticleTemplate--flytitle').text().should.equal('Pretty fly');
         out.first('.ArticleTemplate--title').text().should.equal('For a white guy');
         out.first('.ArticleTemplate--rubric').text().should.equal('uno dos tres cuatro cinco cinco seis');
@@ -58,7 +51,6 @@ describe('header', () => {
   });
 
   describe('WinPredictorsHeader', () => {
-
     it('is compatible with React.Component', () => {
       WinPredictorsHeader.should.be.a('function').and.respondTo('render');
     });
@@ -68,33 +60,24 @@ describe('header', () => {
     });
 
     describe('Rendering', () => {
-
-      let renderer;
-      beforeEach(() => {
-        renderer = createRenderer();
-      });
-
       it('should contain the data passed in within its HTML structure', () => {
         renderer.render(
           <WinPredictorsHeader
             mainImage={{
-              'src': {
-                '1.0x': '/assets/1cab46323bec@1x.jpg',
-              },
+              'sources': [
+                { 'url': 'https://placehold.it/1792x1008', 'width': 896, 'height': 504, 'dppx': 1 },
+              ],
             }}
             flytitle={'Pretty fly'}
             title={'For a white guy'}
             rubric={'uno dos tres cuatro cinco cinco seis'}
           />, {});
         const out = $(renderer.getRenderOutput());
-        out.first('.ArticleTemplate--image')[0].props.src.should.equal('/assets/1cab46323bec@1x.jpg');
+        out.first('.ArticleTemplate--image')[0].props.sources[0].url.should.equal('https://placehold.it/1792x1008');
         out.first('.ArticleTemplate--flytitle').text().should.equal('Pretty fly');
         out.first('.ArticleTemplate--title').text().should.equal('For a white guy');
         out.first('.ArticleTemplate--rubric').text().should.equal('uno dos tres cuatro cinco cinco seis');
       });
-
     });
-
   });
-
 });

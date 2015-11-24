@@ -1,9 +1,9 @@
 @import '@economist/component-articletemplate';
 @import '@economist/component-picture';
 @import '@economist/component-ad-panel';
+@import '@economist/component-video';
 
 @import "./shared";
-
 @import "./main";
 @import "./portrait";
 @import "./leader";

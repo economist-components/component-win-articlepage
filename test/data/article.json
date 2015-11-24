@@ -112,7 +112,7 @@
           ],
           "alt": "This is some alt text",
           "caption": "This is a caption"
-        },
+        }
       },
       "The Soviet Union came apart because it overstretched itself and ran out of money and ideas. Local elites saw no benefit in remaining part of a bankrupt country. It fragmented along the administrative borders of the 15 republics that made up the giant country.",
       "Yet there was no reason why the process had to stop there. Indeed, many of Russia’s regions—including Siberia, Ural, Karelia and Tatarstan—declared their “sovereignty” at the time. To prevent further disintegration Russia’s then president, Boris Yeltsin, came up with the idea of a federation, promising each region as much “sovereignty as it could swallow”. Yeltsin made this promise in Kazan, the ancient capital of Tatarstan, which acquired many attributes of a separate state: a president, a constitution, a flag and, most important, its own budget. In exchange, Tatarstan promised to stay part of Russia.",
@@ -144,6 +144,13 @@
       "The spectre of disintegration is already haunting Russia. Politicians and pundits are scared to discuss it publicly. Shortly after annexing Crimea and stirring separatism in eastern Ukraine, the Kremlin introduced a law which makes “incitement of any action undermining Russia’s own territorial integrity” a criminal offence. Yet the greatest threat to Russia’s territorial integrity is posed by the Kremlin itself and its policies in Ukraine.",
       "By breaking the post-Soviet borders, Mr Putin opened a Pandora’s box. If Crimea “historically” belongs to Russia as he has claimed, what about Kaliningrad, the former Königsberg, an exclave which Germany lost to Russia after the second world war? Should not eastern Karelia, which Finland ceded to the Soviet Union after the winter war in 1940, be Finnish and the Kuril Islands return to Japan?",
       "Even more perilously for Russia’s future, Mr Putin brought into motion forces that thrive on war and nationalism. These are not the forces of imperial expansion—Russia lacks the dynamism, resources and vision that empire-building requires. They are forces of chaos and disorganisation. Eastern Ukraine has turned into a nest of criminals and racketeers. They cannot spread Russian civilisation, but they can spread anarchy.",
+      {
+        "component": "Video",
+        "props": {
+          "className": "ArticleTemplate--video",
+          "vid": "SZ305__0e7U"
+        }
+      },
       "In short, Russia under Mr Putin is much more fragile than it looks. Vyacheslav Volodin, his deputy chief of staff, recently equated Mr Putin with Russia: “No Putin, no Russia,” he said. It is hard to think of a worse indictment."
     ]
   }

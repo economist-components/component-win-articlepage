@@ -56,7 +56,9 @@
 
 .ArticleTemplate--section > p,
 .crosshead,
-.image-caption {
+.image-caption,
+.ArticleTemplate--section > figure,
+.ArticleTemplate--video {
   padding-left: 3%;
   width: 57.9%;
   margin-left: 0px;
@@ -65,6 +67,11 @@
   font-size: 16px;
   text-align: right;
   color: var(--color-imagecaption-text);
+}
+
+.ArticleTemplate--video {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .ArticleTemplate--section {
@@ -202,7 +209,9 @@
 
   .ArticleTemplate--section > p,
   .crosshead,
-  .image-caption {
+  .image-caption,
+  .ArticleTemplate--section > figure,
+  .ArticleTemplate--video {
     width: 83.1%;
   }
 
@@ -214,9 +223,12 @@
 @media screen and (max-width: 480px) {
   .ArticleTemplate--section > p,
   .crosshead,
-  .image-caption {
+  .image-caption,
+  .ArticleTemplate--section > figure,
+  .ArticleTemplate--video {
     padding-left: 0;
   }
+
   .image-caption__text {
     font-size: 14px;
   }
