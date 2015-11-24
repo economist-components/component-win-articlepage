@@ -58,7 +58,7 @@
 .crosshead,
 .image-caption,
 .ArticleTemplate--section > figure,
-.ArticleTemplate--video {
+.video__container {
   padding-left: 3%;
   width: 57.9%;
   margin-left: 0px;
@@ -69,7 +69,7 @@
   color: var(--color-imagecaption-text);
 }
 
-.ArticleTemplate--video {
+.video__container {
   margin-left: 0;
   margin-right: 0;
 }
@@ -211,7 +211,7 @@
   .crosshead,
   .image-caption,
   .ArticleTemplate--section > figure,
-  .ArticleTemplate--video {
+  .video__container {
     width: 83.1%;
   }
 
@@ -225,7 +225,7 @@
   .crosshead,
   .image-caption,
   .ArticleTemplate--section > figure,
-  .ArticleTemplate--video {
+  .video__container {
     padding-left: 0;
   }
 

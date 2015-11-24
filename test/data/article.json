@@ -147,7 +147,6 @@
       {
         "component": "Video",
         "props": {
-          "className": "ArticleTemplate--video",
           "vid": "SZ305__0e7U"
         }
       },
