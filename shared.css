@@ -57,8 +57,7 @@
 .ArticleTemplate--section > p,
 .crosshead,
 .image-caption,
-.ArticleTemplate--section > figure,
-.video__container {
+video__container {
   padding-left: 3%;
   width: 57.9%;
   margin-left: 0px;
@@ -210,7 +209,6 @@
   .ArticleTemplate--section > p,
   .crosshead,
   .image-caption,
-  .ArticleTemplate--section > figure,
   .video__container {
     width: 83.1%;
   }
@@ -224,7 +222,6 @@
   .ArticleTemplate--section > p,
   .crosshead,
   .image-caption,
-  .ArticleTemplate--section > figure,
   .video__container {
     padding-left: 0;
   }
