@@ -93,6 +93,27 @@
       "UNDER Vladimir Putin’s presidency, Russia is seen in the outside world as an expansionist power trying to revise post-Soviet borders and rebuild an empire. But what if Russia itself—a country of nearly 200 nationalities that stretches across 11 time zones—is in danger of crumbling?",
       "It would not be the first time that Russia tried aggression and expansion as a defence against modernisation and by doing so undermined its own territorial integrity. In 1904, when Russia was on the verge of a revolution, Nicholas II attempted to stave off change by looking for national traitors and starting a small war with Japan. The war ended a year later in Russia’s defeat and 12 years later the tsarist Russian empire faded away in a few days. In 1979, as Communist rule struggled under the weight of its own contradictions, the Soviet Union invaded Afghanistan; 12 years later the Soviet Union collapsed just as suddenly.",
       "In 2011 Moscow’s urban middle class took to the streets to demand modernisation. Mr Putin responded by picking out alleged national traitors, annexing Crimea and starting a war against Ukraine. The idea that Russia’s latest foreign-policy adventures might end in the same way as previous ones—with the collapse of the state and disintegration of the country—is not as far-fetched as it might seem.",
+      {
+        "component": "ImageCaption",
+        "props": {
+          "sources": [
+            {
+              "url": "https://placehold.it/800x800",
+              "width": 800,
+              "height": 800,
+              "dppx": 1
+            },
+            {
+              "url": "https://placehold.it/300x300",
+              "width": 300,
+              "height": 300,
+              "dppx": 1
+            }
+          ],
+          "alt": "This is some alt text",
+          "caption": "This is a caption"
+        },
+      },
       "The Soviet Union came apart because it overstretched itself and ran out of money and ideas. Local elites saw no benefit in remaining part of a bankrupt country. It fragmented along the administrative borders of the 15 republics that made up the giant country.",
       "Yet there was no reason why the process had to stop there. Indeed, many of Russia’s regions—including Siberia, Ural, Karelia and Tatarstan—declared their “sovereignty” at the time. To prevent further disintegration Russia’s then president, Boris Yeltsin, came up with the idea of a federation, promising each region as much “sovereignty as it could swallow”. Yeltsin made this promise in Kazan, the ancient capital of Tatarstan, which acquired many attributes of a separate state: a president, a constitution, a flag and, most important, its own budget. In exchange, Tatarstan promised to stay part of Russia.",
       "Removed Gallery component until it is fixed.",

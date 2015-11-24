@@ -56,9 +56,15 @@
 
 .ArticleTemplate--section > p,
 .crosshead,
-.ArticleTemplate--section > figure {
+.image-caption {
   padding-left: 3%;
   width: 57.9%;
+  margin-left: 0px;
+}
+.image-caption__text {
+  font-size: 16px;
+  text-align: right;
+  color: var(--color-imagecaption-text);
 }
 
 .ArticleTemplate--section {
@@ -196,7 +202,7 @@
 
   .ArticleTemplate--section > p,
   .crosshead,
-  .ArticleTemplate--section > figure {
+  .image-caption {
     width: 83.1%;
   }
 
@@ -208,8 +214,11 @@
 @media screen and (max-width: 480px) {
   .ArticleTemplate--section > p,
   .crosshead,
-  .ArticleTemplate--section > figure {
+  .image-caption {
     padding-left: 0;
+  }
+  .image-caption__text {
+    font-size: 14px;
   }
 
   .ArticleTemplate--section > p:first-of-type {
