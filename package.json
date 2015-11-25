@@ -132,7 +132,7 @@
     "@economist/component-imagecaption": "^2.0.0",
     "@economist/component-picture": "^1.1.0",
     "@economist/component-variantify": "^1.0.1",
-    "@economist/component-video": "^1.0.0",
+    "@economist/component-video": "^1.1.0",
     "map-props": "^1.0.0",
     "react": "^0.14.3"
   },
