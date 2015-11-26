@@ -4,7 +4,10 @@ import createVariantSwitcher from '@economist/component-variantify';
 
 import { WinHeader, WinPredictorsHeader } from './header';
 import { WinSubheader, WinLeaderSubheader } from './subheader';
-import WinArticleBody from './body';
+import {
+  StandardArticleBody as StandardWinArticleBody,
+  WorldInNumbersArticleBody as WorldInNumbersWinArticleBody,
+} from './body';
 import { WinFooter } from './footer';
 
 const config = {
@@ -13,28 +16,33 @@ const config = {
     'world-in-main': {
       ArticleHeader: WinHeader,
       ArticleSubheader: WinSubheader,
-      ArticleBody: WinArticleBody,
+      ArticleBody: StandardWinArticleBody,
       ArticleFooter: WinFooter,
     },
     'world-in-portrait': {
       ArticleHeader: WinHeader,
       ArticleSubheader: WinSubheader,
-      ArticleBody: WinArticleBody,
+      ArticleBody: StandardWinArticleBody,
       ArticleFooter: WinFooter,
     },
     'world-in-leader': {
       ArticleHeader: WinHeader,
       ArticleSubheader: WinLeaderSubheader,
-      ArticleBody: WinArticleBody,
+      ArticleBody: StandardWinArticleBody,
       ArticleFooter: WinFooter,
     },
     'world-in-predictors': {
+      ArticleHeader: WinPredictorsHeader,
+      ArticleSubheader: WinSubheader,
+      ArticleBody: StandardWinArticleBody,
+      ArticleFooter: WinFooter,
+    },
+    'world-in-numbers': {
       ArticleHeader: WinHeader,
       ArticleSubheader: WinSubheader,
-      ArticleBody: WinArticleBody,
+      ArticleBody: WorldInNumbersWinArticleBody,
       ArticleFooter: WinFooter,
     },
   },
 };
-
 export default createVariantSwitcher(config)(ArticleTemplate);
