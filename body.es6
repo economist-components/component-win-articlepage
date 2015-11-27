@@ -2,7 +2,7 @@ import ArticleBodyTemplate from '@economist/component-articletemplate/body';
 import AdvertisementPanel from '@economist/component-ad-panel';
 import ImageCaption from '@economist/component-imagecaption';
 import Video from '@economist/component-video';
-import Country from '@economist/component-win-country';
+import { Country } from '@economist/component-win-stats-container';
 
 import { createVariant } from '@economist/component-variantify';
 
