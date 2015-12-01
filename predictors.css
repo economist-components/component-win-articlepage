@@ -11,6 +11,7 @@
     width: 83.1%;
     position: absolute;
     bottom: 0;
+    padding: 3px;
 }
 
 .world-in-predictors-ArticleTemplate--image {
@@ -111,5 +112,8 @@
   .world-in-predictors-ArticleTemplate--title {
     padding-top: 0;
     width: 100%;
+  }
+  .world-in-predictors-ArticleTemplate--subheader {
+    padding-top: 0;
   }
 }

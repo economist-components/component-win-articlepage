@@ -10,7 +10,6 @@ import { ArticleHeaderContainer, ImageContainer } from '@economist/component-art
 
 const extendedHeaderItemClasses = [
   'gutter-l',
-  'col-10',
 ];
 export class WinHeader extends Component {
 
