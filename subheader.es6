@@ -7,7 +7,6 @@ import { defaultGenerateClassNameList } from '@economist/component-variantify';
 const extendedSubheaderItemClasses = [
   'margin-l-1',
   'gutter-l',
-  'col-10',
 ];
 export class WinSubheader extends Component {
 
