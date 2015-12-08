@@ -1,6 +1,7 @@
 import React from 'react';
 import WorldInArticle from '.';
 import article from './test/data/article';
+// There is also sample data for world-in-numbers within './test/data/'
 
 export default (
   <WorldInArticle
@@ -16,5 +17,6 @@ export default (
     mainImage={article.attributes.mainimage}
     content={article.attributes.content}
     sectionName={article.attributes.section}
+    variantName={article.attributes.variantName}
   />
 );

@@ -2,7 +2,6 @@
 import React, { Component, PropTypes } from 'react';
 
 import { defaultGenerateClassNameList } from '@economist/component-variantify';
-import { getSrcSet } from '@economist/component-articletemplate/utils';
 import { isImage } from '@economist/component-articletemplate/proptypes';
 import Picture from '@economist/component-picture';
 
@@ -32,7 +31,7 @@ export class WinHeader extends Component {
   render() {
     const { generateClassNameList, mainImage, flytitle, title, rubric } = this.props;
 
-    let flytitleEl, titleEl, rubricEl, mainImageEl;
+    let flytitleEl = null, titleEl = null, rubricEl = null, mainImageEl = null;
     if (flytitle) {
       flytitleEl = (
         <h1
@@ -52,7 +51,7 @@ export class WinHeader extends Component {
           itemProp="alternativeHeadline"
           className={[
             ...generateClassNameList('ArticleTemplate--title'),
-            ...extendedHeaderItemClasses
+            ...extendedHeaderItemClasses,
           ].join(' ')}
         >
           {title}
@@ -65,7 +64,7 @@ export class WinHeader extends Component {
           itemProp="rubric"
           className={[
             ...generateClassNameList('ArticleTemplate--rubric'),
-            ...extendedHeaderItemClasses
+            ...extendedHeaderItemClasses,
           ].join(' ')}
         >
           {rubric}
@@ -117,14 +116,14 @@ export class WinPredictorsHeader extends Component {
   render() {
     const { generateClassNameList, mainImage, flytitle, title, rubric } = this.props;
 
-    let flytitleEl, titleEl, rubricEl, mainImageEl;
+    let flytitleEl = null, titleEl = null, rubricEl = null, mainImageEl = null;
     if (flytitle) {
       flytitleEl = (
         <h1
           itemProp="headline"
           className={[
             ...generateClassNameList('ArticleTemplate--flytitle'),
-            ...extendedHeaderItemClasses
+            ...extendedHeaderItemClasses,
           ].join(' ')}
         >
           {flytitle}
@@ -137,7 +136,7 @@ export class WinPredictorsHeader extends Component {
           itemProp="alternativeHeadline"
           className={[
             ...generateClassNameList('ArticleTemplate--title'),
-            ...extendedHeaderItemClasses
+            ...extendedHeaderItemClasses,
           ].join(' ')}
         >
           {title}
@@ -150,7 +149,7 @@ export class WinPredictorsHeader extends Component {
           itemProp="rubric"
           className={[
             ...generateClassNameList('ArticleTemplate--rubric'),
-            ...extendedHeaderItemClasses
+            ...extendedHeaderItemClasses,
           ].join(' ')}
         >
           {rubric}

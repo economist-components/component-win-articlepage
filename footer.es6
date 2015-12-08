@@ -1,3 +1,4 @@
+/* eslint react/no-multi-comp: 0 */
 import React, { Component, PropTypes } from 'react';
 
 import { ArticleFooterContainer } from '@economist/component-articletemplate/footer';
@@ -44,7 +45,7 @@ export class WinFooter extends Component {
       generateClassNameList: defaultGenerateClassNameList,
     };
   }
-  /* eslint-disable react/no-danger */
+
   render() {
     const { generateClassNameList, byline, bylineLocation, bio } = this.props;
     return (
@@ -72,7 +73,7 @@ export class WinFooter extends Component {
               ...generateClassNameList(`ArticleTemplate--byline-bio`),
               ...extendedFooterBylineDetailsClasses,
             ].join(' ')}
-            dangerouslySetInnerHTML={{
+            dangerouslySetInnerHTML={{ // eslint-disable-line react/no-danger
               '__html': bio,
             }}
           />
@@ -80,5 +81,5 @@ export class WinFooter extends Component {
       </ArticleFooterContainer>
     );
   }
-  /* eslint-enable react/no-danger */
+
 }
