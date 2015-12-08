@@ -2,9 +2,10 @@ function getNthParagraphIndex(paragraphLine, content) {
   let lastParagraphIndex = 0;
   let currentIndex = 0;
   let nParagraph = paragraphLine;
-  while (nParagraph-- && currentIndex++ < content.length) {
+  while (nParagraph > 1 && currentIndex++ < content.length) {
     if (typeof content[currentIndex] === 'string') {
       lastParagraphIndex = currentIndex;
+      nParagraph--;
     }
   }
 
