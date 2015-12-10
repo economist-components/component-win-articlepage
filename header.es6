@@ -38,7 +38,7 @@ export class WinHeader extends Component {
           itemProp="headline"
           className={[
             ...generateClassNameList('ArticleTemplate--flytitle'),
-            ...extendedHeaderItemClasses
+            ...extendedHeaderItemClasses,
           ].join(' ')}
         >
           {flytitle}
