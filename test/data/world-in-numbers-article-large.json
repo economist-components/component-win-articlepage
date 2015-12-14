@@ -1,1399 +1,987 @@
 {
-  "type": "posts",
-  "id": "2",
-  "publishDate": "2015-09-29T16:45:56.698Z",
-  "attributes": {
-    "metaTags": [
-      {
-        "property": "og:type",
-        "content": "article"
-      },
-      {
-        "property": "og:title",
-        "content": "Fake title"
-      },
-      {
-        "property": "og:description",
-        "content": "Fake description"
-      },
-      {
-        "property": "og:image",
-        "content": "https://placehold.it/1792x1008"
-      },
-      {
-        "property": "og:image:width",
-        "content": "1792"
-      },
-      {
-        "property": "og:image:height",
-        "content": "1008"
-      },
-      {
-        "property": "article:published_time",
-        "content": "2015-07-24T09:00:00.000Z"
-      },
-      {
-        "property": "article:modified_time",
-        "content": "2015-07-24T09:00:00.000Z"
-      },
-      {
-        "property": "article:section",
-        "content": "Fake section"
-      },
-      {
-        "property": "article:tag",
-        "content": "Fake tag"
-      },
-      {
-        "property": "article:tag",
-        "content": "Fake tag 2"
-      },
-      {
-        "name": "twitter:card",
-        "content": "summary_large_image"
-      }
-    ],
-    "section": "Fake section",
-    "mainimage": {
-      "sources": [
-        { "url": "https://placehold.it/1792x1008", "width": 896, "height": 504, "dppx": 2 },
-        { "url": "https://placehold.it/896x504", "width": 896, "height": 504, "dppx": 1 },
-        { "url": "https://placehold.it/1536x864", "width": 768, "height": 432, "dppx": 2 },
-        { "url": "https://placehold.it/768x432", "width": 768, "height": 432, "dppx": 1 },
-        { "url": "https://placehold.it/1280x720", "width": 640, "height": 360, "dppx": 2 },
-        { "url": "https://placehold.it/640x470", "width": 640, "height": 360, "dppx": 1 },
-        { "url": "https://placehold.it/1024x768", "width": 512, "height": 384, "dppx": 2 },
-        { "url": "https://placehold.it/512x384", "width": 512, "height": 384, "dppx": 1 },
-        { "url": "https://placehold.it/768x768", "width": 384, "height": 384, "dppx": 2 },
-        { "url": "https://placehold.it/384x288", "width": 384, "height": 384, "dppx": 1 },
-        { "url": "https://placehold.it/512x768", "width": 256, "height": 384, "dppx": 2 },
-        { "url": "https://placehold.it/256x384", "width": 256, "height": 384, "dppx": 1 }
-      ],
-      "alt": "this is the image description"
-    },
-    "tileimage": {
-      "1.0x": "/example-assets/19c0e5b43e9e@1x.jpg",
-      "1.3x": "/example-assets/19c0e5b43e9e@1.3x.jpg",
-      "1.4x": "/example-assets/19c0e5b43e9e@1.4x.jpg",
-      "1.6x": "/example-assets/19c0e5b43e9e@1.6x.jpg",
-      "2.0x": "/example-assets/19c0e5b43e9e@2x.jpg",
-      "2.6x": "/example-assets/19c0e5b43e9e@2.6x.jpg",
-      "3.3x": "/example-assets/19c0e5b43e9e@3.3x.jpg"
-    },
-    "title": "Fake title",
-    "toc": "Fake toc",
-    "flytitle": "Fake flytitle",
-    "byline": "Fake byline",
-    "byline_location": "Fake location",
-    "bio": "<strong>Fake name</strong>: fake role, <em>fake magazine</em>",
-    "slug": "fake-title",
-    "dateline": "Fake date",
-    "rubric": "Fake rubric",
-    "variantName": "world-in-numbers",
-    "content": [
-      "The first sentence",
-      "The second sentence",
-      "The third sentence",
-      "The fourth sentence",
-      "The fifth sentence",
-      "The sixth sentence",
-      "The seventh sentence",
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 1",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 2",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 3",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 4",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 5",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 6",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 7",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 8",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 9",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 10",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 11",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 12",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 13",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 14",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 15",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 16",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 17",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 18",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 19",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 20",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 21",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 22",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 23",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 24",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 25",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 26",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 27",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 28",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 29",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 30",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 31",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 32",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 33",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 34",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 35",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 36",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 37",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 38",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 39",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 40",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 41",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 42",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 43",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 44",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 45",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 46",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 47",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 48",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 49",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 50",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 51",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 52",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 53",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 54",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 55",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 56",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 57",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 58",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 59",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 60",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 61",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 62",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 63",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 64",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 65",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 66",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 67",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 68",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 69",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 70",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 71",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 72",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 73",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 74",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 75",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 76",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 77",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 78",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 79",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 80",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      },
-      {
-        "component": "Country",
-        "props": {
-          "title": "Country 81",
-          "stats": [
-            {
-              "key": "stat A",
-              "value": "value for stat A"
-            }
-          ]
-        },
-        "content": [
-          "The first line.",
-          "The second line."
-        ]
-      }
-    ]
-  }
+   "id":"10549",
+   "attributes": {
+     "slug":"europe",
+     "title":"Europe",
+     "content":[
+        {
+           "component":"Country",
+           "props":{
+              "title":"Austria",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"1.4%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$42,360 (PPP: $ 47,650)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"1.9% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-1.9"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"8.6m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>The centre-left Social Democratic Party and the centre-right Austrian Peopleâ€™s Party will maintain their chilly coalition until elections in 2018, but only because both would suffer at the polls if early elections were called, opening the door to the rising far-right Freedom Party. Slow progress on tax reform, through which income-tax cuts will be balanced by a clampdown on evasion and welfare abuse, will discourage investment. A tailwind from a healthier Europe will keep the economy growing.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Belgium",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"1.6%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$40,220 (PPP: $44,200)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"1.5 % "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-2.5"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"11.4m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>Tensions between the Flemish, who dominate the centre-right coalition government, and the Francophones will, as usual, threaten, but not break, national unity. Opposition from the left will give a rough ride to the governmentâ€™s budget-balancing plans, but as long as the four-party coalition remains focused on the economy rather than the linguistic divide, the prospects for reform are good. Measures to bring down the wage bill to boost competitiveness will erode purchasing power, but the economy will still manage to expand.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Bulgaria",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"2.5%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$6,710 (PPP: $17,690)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"1.6 %"
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-2.2"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"7.1m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>The centre-right coalition government that emerged in 2014 after a succession of short-lived administrations is itself precarious, and relies on the support of nationalist and centre-left forces. Nevertheless, Boiko Borisov, the prime minister, has fared better this time than during his ill-fated 2009-13 stint, keeping the focus on deepening EU membership and re-sparking the economy. A reviving Europe will improve trade and investment, while Greeceâ€™s settlement with its creditors will spare Bulgaria contagion risk.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Croatia",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"1.3%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$11,270 (PPP: $22,750)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"1.5% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-4.2"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"4.2m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>The Croatian Democratic Union (HDZ), which occupies the centre-right, is poised to oust the incumbent Social Democratic Party-led coalition in elections scheduled for late 2015 or early 2016. This will bring a more pro-Western stance and a commitment to a pro-market agenda. The HDZ, like its predecessor, will need coalition partners to secure a majority, and progress on economic reform will be slow, reflecting rifts that criss-cross the political landscape. The country has run afoul of the EUâ€™s Excessive-Deficit Procedure, an embarrassment it shares with France, Portugal, Spain and the UK, among others. This will require painful budget adjustment. The economy will pick up, but not by much.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Czech Republic",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"2.7%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$17,480 (PPP: $32,930)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"1.6% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-1.5"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"10.6m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>The broad three-party coalition government led by the prime minister, Bohuslav Sobotka of the Czech Social Democratic Party, will preside over a steady-as-she-goes economy, which has been helped by falling unemployment. With the opposition scattered, the main source of dissent will be from within the coalitionâ€™s ranks, and particularly from Andrej Babis, leader of the centre-right ANO party, who would like a try at the top job in 2017 and will test his strength in regional elections scheduled for 2016.</p>\n",
+              "<p><strong>To watch</strong>: Cold welcome. Social tensions will rise as the country takes in 1,500 refugees, an unpopular move agreed under pressure from the EU.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Denmark",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"1.4%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$51,080 (PPP: $46,620)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"1.7% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-3.1"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"5.7m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>After failing to negotiate a formal coalition government following inconclusive elections in June 2015, the Liberal Party, with just 34 of 179 parliamentary seats, will govern vote-to-vote, and is unlikely to survive the full term. The party will focus on tax cuts, but will be pressed for more generous welfare spending and to tighten curbs on immigration (the latter a sop to the anti-immigration Danish Peopleâ€™s Party, on whose 37 seats it relies). A weaker krone should help the economy.</p>\n",
+              "<p><strong>To watch</strong>: Brick economy. The Lego Group (from Danish leg godt, â€œPlay wellâ€) will open a 12,000-sq-metre â€œhands-on, minds-on experienceâ€ based on the popular building toy.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Estonia",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"2.8%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$16,510 (PPP: $28,380)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"2.2%"
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-0.3"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"1.3m"
+                 }
+              ]
+           },
+           "content":[
+              "<p class=\"p1\"><span class=\"s1\">The freshly minted three-party coalition government of the prime minister, Taavi Roivas, will press ahead with a liberal economic agenda that has guided the country since independence in the 1990s. Economic growth will pick up, but austerity has soured the public mood, and further restraint to pay for more security spending would be burdensome. Consumer spending and export growthâ€”in part thanks to a less awful Russian economyâ€”will fuel the recovery. Progress on e-government will attract more plaudits.</span></p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Finland",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"1.4%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$41,430 (PPP: $40,880)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"1.1%"
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-1.6"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"5.5m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>The right-wing coalition that emerged from elections in April 2015 under the prime minister, Juha Sipila, is divided over issues including immigration and the EUâ€”on which The Finns, a populist Eurosceptic party, has a loud voice.  In common with other Nordic and Baltic states, security concerns and NATO commitments will be in the spotlight as the Ukraine conflict plays out. In common with half the Western world, economic policy will focus on restoring some semblance of growth.</p>\n",
+              "<p><strong>To watch</strong>: Taking parts. Athletes will attend the 9th European Transplant and Dialysis Sport Championships in Vantaa, near Helsinki, in July.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"France",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"1.3%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$36,070 (PPP: $41,340)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"1.0%â€©"
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-3.6"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"64.7m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>The presidency of FranÃ§ois Hollande is languishing amid economic stagnation and deep public disapproval, and he is heading towards certain defeat in 2017. The liberalising reforms to which his government turned in 2015 will bear some fruit, but not enough to stay the advance of the main opposition party, les RÃ©publicains. The battle for the opposition presidential nomination, between Nicolas Sarkozy, a former president, and Alain JuppÃ©, a former prime minister, will provide political theatre as the economy struggles.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Germany",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"1.8%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$39,640 (PPP: $48,060)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"1.5%"
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"0.8"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"81.4m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>Angela Merkelâ€™s euro-zone partners want Germany to step up investment and capital spending to stimulate Europeâ€™s economy, but the Germans are a cautious lot. Likewise, reforms to address a looming demographic crunch will be sidelined (though an influx of Syrian refugees may help). Germany will remain more welcoming to immigrants than most of Europe, but the influx will test the countryâ€™s good will. Mrs Merkelâ€™s Christian Democratic Union/Christian Social Union alliance maintains a solid lead in polls and may turn on its junior coalition partner, the Social Democratic Party, as it prepares to go it alone in 2017 elections. Low oil prices will boost economic growth.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Greece",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"-1.0%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$17,600 (PPP: $25,620)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"0.6% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-2.2"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"11.1m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>Alexis Tsipras, leader of the anti-austerity Syriza party, opens 2016 with a fresh mandate after winning snap elections in September despite capitulating to creditors in a tough bail-out deal that the public hates. This muddle leaves Greece in a state of low growth and high debt that no one inside or outside the country considers sustainable. Departure from the euro zone is still possible, but that can has been kicked down the road, so 2016 will be a year of looking the other way as Mr Tsipras, Greeceâ€™s creditors and its citizens take a breather.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Hungary",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"2.5%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$12,030 (PPP: $26,340)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"2.5%"
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-2.6"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"9.8m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>The second-term Fidesz government will pursue a nationalist, state-led path, though without the super-majority of its first term and with pressure from the anti-immigration Jobbik opposition pushing policy to the right. The heavy-handed, hasty decision-making of the prime minister, Viktor Orban, and his close circle will  irritate voters, who will protest sporadically. The economy will settle onto a low-growth path, held back in part by interventionist policies and the anxiety they engender among trade partners and investors.</p>\n",
+              "<p><strong>To watch</strong>: Barrier grief. A newly erected fence along the border with Serbia and Croatia will stem the flow of migrants via the Balkans from troubled countries in the Middle East and Africa.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Ireland",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"3.5%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$48,160 (PPP: $52,990)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"1.1%"
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-1.7"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"4.7m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>The Fine Gael-Labour coalition that presided over the countryâ€™s successful exit from its EU/IMF bail-out programme has since attracted the ire of voters over policy mistakes and the pain of austerity. But Fine Gael is still well placed to lead the government that emerges from elections scheduled for early 2016â€”at the head of a broader and more unwieldy coalition. That will make for a less stable and less effective government, undoing some of the confidence-building that has been a success of recent years. Still, the economy is recovering and should grow comfortably above the EU average.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Italy",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"1.0%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$29,420 (PPP: $36,850)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"1.1%"
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-2.8"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"59.8m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>The reform programme undertaken by Matteo Renzi, the prime minister, will run into resistance from vested interests within his own coalition government. A reform of the lower house comes into force in July 2016 and, if followed by measures curbing the upper chamber, would allow Mr Renzi to seize a stable majority in an early election. Regrettably, messy elections before mid-2016 and a continuation of unstable coalitions make up the more likely scenario. Reforms to governance, labour markets and education have been approved or are close to it, and will bear fruit in time. For now, though, the economy will barely growâ€”and that growth will be entirely thanks to greater demand from recovering neighbours.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Latvia",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"3.1%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$12,630 (PPP: $25,370)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"2.1% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-1.1"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"2.0m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>The two-term centre-right coalition government under the prime minister, Laimdota Straujuma, will press on with a pro-European, fiscally conservative programme. Coalition defections over an agreement to accept 250 asylum-seekers may reduce the government to minority status, followed by early elections. Although the make-up of the resulting government would be different, consensus over management of the economy means policy would remain broadly the same. Economic growth suffered from setbacks in Europe and Russia, but should rebound.</p>\n",
+              "<p><strong>To watch</strong>: Bear trap. The US will begin deploying tanks and artillery in the region in response to fears of Russian expansionism.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Lithuania",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"3.0%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$14,640 (PPP: $28,800)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"1.5%"
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-1.3"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"2.9m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>The centre-left coalition under the prime minister, Algirdas Butkevicius, has shed some partners along the way but will head towards elections late in 2016 with a comfortable majority.  Russiaâ€™s aggression in Ukraine and resulting tensions with Lithuaniaâ€™s Polish- and Russian-speaking minorities will raise social tensions and push security up the agenda, while Russiaâ€™s slowdown will be a drag on the economy. Still, growth should rally. </p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Netherlands",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"2.1%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$42,870 (PPP: $50,130)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"1.2%"
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-1.7"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"16.9m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>Steady management of an economy in recovery will contrast with political swings, as the grand coalition across the left-right divide struggles to complete a term set to end in 2017. It may fail, so elections are a possibility. Early or on time, the vote will favour the opposition. Progress on a reform programme that includes health and immigrationâ€”issues on which the government has haemorrhaged supportâ€”will languish as its power leaks away. Improving demand at home and abroad should keep the economy ticking along.</p>\n",
+              "<p><strong>To watch</strong>: Right minded. The right-wing Party For Freedom will gather supporters as Europeâ€™s immigration crisis persists, and could establish itself as the second-strongest force in the legislature.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Norway",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"1.2%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$80,810 (PPP: $66,860)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"2.2% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"5.3"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"5.1m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>A minority right-of-centre government will work to improve ties with the EU, which were shaken under the previous left-leaning coalition. The government will try to stimulate business by reforming taxes and encouraging research and development, while reversing some of the redistributive taxation favoured by its predecessor. A slump in oil prices knocked the hydrocarbons-based economy as investment took a hit, but the sector should rebound in 2016 as the external picture brightens. </p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Poland",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"2.9%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$12,140 (PPP: $26,620)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"2.2% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-2.0"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"38.4m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>The right-wing Law and Justice party was returned to power in late-2015 after nine years of leftist rule, and with sufficient seats to form the first single-party administration in 26 years. The Eurosceptic, socially conservative party promises a crowd-pleasing anti-immigration stance and an equally populist approach to economic policymaking, with reforms likely to include a reversal of a recent increase in the retirement age and new taxes on bank assets and retailers. The fiscal gap will grow, investors will be more cautious and economic growth will slacken. </p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Portugal",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"1.8%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$17,990 (PPP: $29,500)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"1.4% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-2.8"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"10.5m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>The Portugal Ã  Frente coalition won a plurality of votes at the October 2015 election, but lost its majority of seats. The country faces a period of political confusion, the last thing its economy needs. The economy has been rehabilitated by the emergency measures put in place following the Great Recession. The budget deficit will fall below the 3% Maastricht limit, and growth will return to the modest levels witnessed throughout the euro zone.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Romania",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"3.9%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$9,240 (PPP: $21,790)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"-0.7% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-3.0"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"19.4m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>The Social Democratic Party-led government of Victor Ponta, the prime minister, will face a resurgent centre-right opposition, buoyed by the victory in November 2014 of its presidential candidate, Klaus Iohannis. The president holds considerable veto power, and clashes with the government will be a feature as general elections approach late in 2016. The SDP will benefit at the polls from a vigorous economy and will be hard to unseat. Tax cuts will help growth.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Russia",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"-0.4%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"8,670 (PPP: $24,910)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"8.2%"
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-2.9"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"143.4m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>Low oil prices, Western sanctions over Ukraine (set to be renewed at the beginning of 2016) and high inflation are hammering the economy; public services and living standards will decline. Vladimir Putin, the president, will find it hard to maintain the popularity achieved amid nationalist fervour over his Ukraine policy. Russiaâ€™s attacks in Syria will make matters worse.</p>\n",
+              "<p><strong>To watch</strong>: One-way bet. The suppression of effective political opposition makes victory for the pro-government United Russia in 2016â€™s legislative elections a foregone conclusion.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Slovakia",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"2.8%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$16,580 (PPP: $29,980)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"0.4% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-3.1"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"5.4m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>Direction-Social Democracy (Smer-SD) will remain the party of government following elections scheduled for March, but a reduced majority will force it into coalition (the Slovak National Party, with which Smer-SD governed in 2006-10, is a likely candidate). The budget deficit will swell in response to pre-election social spending, but the administration will keep it below the 3% ceiling and maintain its reputation as a prudent fiscal manager. The open economy will be lifted by rising European demand.</p>\n",
+              "<p><strong>To watch</strong>: Wheels of fortune. Jaguar Land Rover, a carmaker owned by Indiaâ€™s Tata Motors, will break ground on a new manufacturing plant, its first in Europe outside Britain and a vote of confidence in Slovakiaâ€™s economy.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Slovenia",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"1.9%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$20,040 (PPP: $31,310)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"0.8% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-1.1"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"2.1m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>Miro Cerar, the prime minister, and his Modern Centre Party-led government are struggling to implement much-needed reforms owing to divisions within and between the coalition partners. Measures including public-sector cuts, bank restructuring and an unpopular privatisation programme are proving divisive, but in their absence the country will require an EU bail-out. The government has already lost several key figures to a juicy succession of scandals, and its survival is far from guaranteed. </p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Spain",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"2.5%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$25,300 (PPP: $36,590)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"0.4% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-3.5"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"46.1m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>Despite the effervescent rise of the anti-establishment Podemos party, the Partido Popular was well positioned to remain in government following elections scheduled for late 2015, though it was likely to need coalition supportâ€”a novelty for Spain. This will probably come from another insurgent party, the centrist Ciudadanos. Podemos has eroded the left-wing base of the Partido Socialista Obrero EspaÃ±ol (PSOE), Spainâ€™s other traditional establishment party, although a PSOE-Ciudadanos coalition is not entirely off the cards. Spain has complied with the spirit and letter of its creditorsâ€™ post-crisis requirements, and is in robust recovery.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Sweden",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"2.9%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$50,320 (PPP: $47,860)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"1.2% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-0.7"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"9.8m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>The minority centre-left alliance of the Social Democratic Party and the Greens Party will remain in office, but only thanks to a pact signed with the main opposition parties. The agreement constrains the freedom to make policy (the government implemented the oppositionâ€™s draft budget for 2015 in return for support in the legislature), but achieves its express purpose: to limit the influence of the popular, far-right Sweden Democrats. Fiscal policy will not be as tight as the government would have liked, but the deficit will edge down as growth picks up. </p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Switzerland",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"1.5%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$85,210 (PPP: $59,910)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"-0.1% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"0.2"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"8.2m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>Policy will move to the right after a strong showing by the anti-immigration Swiss Peopleâ€™s Party in 2015 elections. The fiscal stance will tighten, and resistance to EU rules on the free movement of people will toughen. Global banking and tax norms will be phased in, but plans to phase out nuclear power may be reviewed given the rightâ€™s increased influence. </p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Turkey",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"2.8%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$8,570 (PPP: $20,390)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"7.2% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-2.2"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"77.3m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>The moderately Islamic AK party of the president, Recep Tayyip Erdogan, stormed back to a sweeping victory in elections in late 2015, just months after a previous vote stripped it of the majority it had held for over a decade. Mr Erdogan, who has ruled throughout that period, first as prime minister and then, from 2014, as the countryâ€™s first popularly elected president, is keen to replace the parliamentary system with an executive presidency, and seems unconcerned that the constitution says otherwise. Economic growth will edge higher but will remain well below the boom years of 2010-13. </p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"Ukraine",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"0.9%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$2,100 (PPP: $7,660)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"14.0% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-4.3"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"44.6m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>Caught between economic chaos, Russian aggression and its own dysfunction, the government will struggle to assert its authority even in those parts of the country it controls. In contested lands, the 2015 Minsk agreement has brought an uneasy stasis but wonâ€™t last, and festering violence will persist. IMF conditions imposed to stabilise the economy will test the citizenryâ€™s enthusiasm for the West, while the economy will respond slowly. Economic meltdown is a diminishing risk, and the government may survive 2016.</p>\n",
+              "<p><strong>To watch</strong>: Voicing support. Ukraine will return to the Eurovision Song Contest, a kitsch sing-off that attracts huge audiences across the continent.</p>"
+           ]
+        },
+        {
+           "component":"Country",
+           "props":{
+              "title":"United Kingdom",
+              "stats":[
+                 {
+                    "key":"GDP growth",
+                    "value":"2.2%"
+                 },
+                 {
+                    "key":"GDP per head",
+                    "value":"$44,580 (PPP: $41,500)"
+                 },
+                 {
+                    "key":"Inflation",
+                    "value":"1.5% "
+                 },
+                 {
+                    "key":"Budget balance",
+                    "value":"-3.9"
+                 },
+                 {
+                    "key":"Population",
+                    "value":"64.9m"
+                 }
+              ]
+           },
+           "content":[
+              "<p>David Cameronâ€™s Conservative government, unencumbered by a coalition partner after securing a majority in the May 2015 election, will nevertheless be vulnerable to back-bench rebellions as it tackles issues that divide the party. The nature of Britainâ€™s relationship with the EU is up for grabs, with an â€œin-or-outâ€ referendum likely in late 2016 or early 2017. An â€œinâ€vote is probable, but not assured. A sound recovery is under way, but interest rates wonâ€™t rise until the second half of 2016. </p>"
+           ]
+        }
+     ],
+     "variantName":"world-in-numbers",
+     "metaTags":[
+        {
+           "property":"og:type",
+           "content":"world-in-numbers"
+        },
+        {
+           "property":"og:title",
+           "content":"Europe"
+        },
+        {
+           "property":"og:description",
+           "content":""
+        },
+        {
+           "property":"og:image",
+           "content":""
+        },
+        {
+           "property":"og:image:width",
+           "content":""
+        },
+        {
+           "property":"og:image:height",
+           "content":""
+        },
+        {
+           "property":"twi_continent:published_time",
+           "content":"2015-11-06T14:42:09.654Z"
+        },
+        {
+           "property":"twi_continent:modified_time",
+           "content":"2015-11-19T17:30:35.771Z"
+        },
+        {
+           "property":"world-in-numbers:section",
+           "content":""
+        }
+     ]
+   }
 }
