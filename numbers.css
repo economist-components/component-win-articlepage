@@ -6,7 +6,8 @@
 
 .world-in-numbers-ArticleTemplate--title-uppercase {
   text-transform: uppercase;
-  font-family: 'Georgia, serif';
+  font-family: 'Neutra2Display';
+  color: var(--color-economist);
   font-weight: normal;
 }
 
