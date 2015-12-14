@@ -1,6 +1,7 @@
 /* eslint react/no-multi-comp: 0, one-var: 0 */
+/* global window */
 import React, { Component, PropTypes } from 'react';
-
+import codify from 'slugger';
 import { defaultGenerateClassNameList } from '@economist/component-variantify';
 import { isImage } from '@economist/component-articletemplate/proptypes';
 import Picture from '@economist/component-picture';
@@ -180,21 +181,70 @@ export class WinPredictorsHeader extends Component {
 }
 
 export class WinNumbersHeader extends Component {
-  static get propTypes() {
-    return {
-      generateClassNameList: PropTypes.func,
-      title: PropTypes.string,
+  static propTypes = {
+    generateClassNameList: PropTypes.func,
+    content: PropTypes.array,
+    title: PropTypes.string,
+  }
+
+  static defaultProps = {
+    generateClassNameList: defaultGenerateClassNameList,
+  }
+
+  constructor() {
+    super(...arguments);
+    this.generateCountries = this.generateCountries.bind(this);
+    this.generateCountryElement = this.generateCountryElement.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.state = {
+      value: 'select',
     };
   }
 
-  static get defaultProps() {
-    return {
-      generateClassNameList: defaultGenerateClassNameList,
-    };
+  handleChange(event) {
+    const target = event.target.value;
+    const globalObject = global || (typeof window !== 'undefined' ? window : {});
+    this.setState({ selectValue: target });
+    globalObject.location = target;
+  }
+
+  generateCountries() {
+    const { content } = this.props;
+    const countries = [];
+    content.map((item) => {
+      if (item.component && item.component === 'Country') {
+        countries.push({
+          name: item.props.title,
+          slug: codify(item.props.title, { decode: false }),
+        });
+      }
+    });
+    return countries;
+  }
+
+  generateCountryItem(country, index) {
+    return (
+      <option value={`#${country.slug}`} key={`country-item-${index}`} className="countries__option">
+        {country.name}
+      </option>
+    );
+  }
+
+  generateCountryElement() {
+    const countries = this.generateCountries();
+    return (
+      <select className="countries__select" value={this.state.selectValue} onChange={this.handleChange}>
+        <option value="select">Select a country...</option>
+        {countries.map((country, index) => {
+          return this.generateCountryItem(country, index);
+        })}
+      </select>
+    );
   }
 
   render() {
     const { generateClassNameList, title } = this.props;
+    const countryElementList = this.generateCountryElement();
     const titleEl = (
       <div>
         <h1
@@ -219,6 +269,8 @@ export class WinNumbersHeader extends Component {
         >
           Our 2016 forecasts for {title}.
         </div>
+
+        {countryElementList}
       </div>
     );
     return (

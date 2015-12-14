@@ -2,7 +2,7 @@
 import React from 'react';
 import { createRenderer } from 'react-addons-test-utils';
 
-import { WinHeader, WinPredictorsHeader } from '../header';
+import { WinHeader, WinPredictorsHeader, WinNumbersHeader } from '../header';
 
 import $ from 'teaspoon';
 import chai from 'chai';
@@ -79,5 +79,61 @@ describe('header', () => {
         out.first('.ArticleTemplate--rubric').text().should.equal('uno dos tres cuatro cinco cinco seis');
       });
     });
+  });
+
+  describe('WinNumbersHeader', () => {
+    it('is compatible with React.Component', () => {
+      WinNumbersHeader.should.be.a('function').and.respondTo('render');
+    });
+
+    it('renders a React element', () => {
+      React.isValidElement(<WinNumbersHeader />).should.equal(true);
+    });
+
+    describe('generateCountryItem', () => {
+      it('renders an option item', () => {
+        const winNumbersHeader = new WinNumbersHeader();
+        winNumbersHeader.generateCountryItem({
+          slug: 'sluggy',
+          name: 'foobar',
+        }, 0).should.deep.equal(
+          <option value="#sluggy" key="country-item-0" className="countries__option">
+            foobar
+          </option>
+        );
+      });
+    });
+
+    describe('generateCountryElement', () => {
+      it('renders a select item', () => {
+        const winNumbersHeader = new WinNumbersHeader({
+          content: [
+            {
+              component: 'Country',
+              props: {
+                title: 'Austria',
+              },
+            },
+          ],
+        });
+        /* eslint-disable no-undefined */
+        winNumbersHeader
+          .generateCountryElement()
+          .should.deep.equal(
+            <select
+              className="countries__select"
+              value={undefined}
+              onChange={winNumbersHeader.handleChange}
+            >
+              <option value="select">Select a country...</option>
+              {[ <option value="#austria" key="country-item-0" className="countries__option">
+                Austria
+              </option> ]}
+            </select>
+          );
+        /* eslint-enable no-undefined */
+      });
+    });
+
   });
 });
