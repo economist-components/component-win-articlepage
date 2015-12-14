@@ -124,15 +124,23 @@ export class WinNumbersSubheader extends Component {
     const { generateClassNameList, title } = this.props;
     return (
       <ArticleSubheaderContainer generateClassNameList={generateClassNameList}>
-        <h2
+        <div
           itemProp="section"
           className={[
-            ...generateClassNameList('ArticleTemplate--section-section'),
+            ...generateClassNameList('ArticleTemplate--section-section-wrapper'),
             ...extendedSubheaderItemClasses,
           ].join(' ')}
         >
-          {title}
-        </h2>
+          <h2
+            itemProp="section"
+            className={[
+              ...generateClassNameList('ArticleTemplate--section-section'),
+              ...extendedSubheaderItemClasses,
+            ].join(' ')}
+          >
+            {title}
+          </h2>
+        </div>
       </ArticleSubheaderContainer>
     );
   }
