@@ -183,6 +183,7 @@ export class WinNumbersHeader extends Component {
   static get propTypes() {
     return {
       generateClassNameList: PropTypes.func,
+      title: PropTypes.string,
     };
   }
 
@@ -193,7 +194,7 @@ export class WinNumbersHeader extends Component {
   }
 
   render() {
-    const { generateClassNameList } = this.props;
+    const { generateClassNameList, title } = this.props;
     const titleEl = (
       <div>
         <h1
@@ -216,7 +217,7 @@ export class WinNumbersHeader extends Component {
             ...extendedHeaderItemClasses,
           ].join(' ')}
         >
-          Our 2016 forecasts for 30 European countries.
+          Our 2016 forecasts for {title}.
         </div>
       </div>
     );
