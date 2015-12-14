@@ -1,0 +1,62 @@
+.world-in-numbers-ArticleTemplate--title {
+  font-family: 'Officina';
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.world-in-numbers-ArticleTemplate--title-uppercase {
+  text-transform: uppercase;
+  font-family: 'Georgia, serif';
+  font-weight: normal;
+}
+
+.world-in-numbers-ArticleTemplate--title-strap {
+  font-family: 'Officina';
+  margin-top: 37px;
+}
+
+.world-in-numbers-ArticleTemplate--header {
+  margin-bottom: 70px;
+}
+
+.world-in-numbers-ArticleTemplate--header,
+.world-in-numbers-ArticleTemplate--subheader {
+  text-align: center;
+}
+
+.world-in-numbers-ArticleTemplate--subheader {
+  margin: 0;
+  width: 100%;
+  border: 0 none;
+  border-bottom: 1px solid #979797;
+  padding: 0;
+  position: relative;
+  height: 41px;
+  margin-bottom: 70px;
+}
+
+.world-in-numbers-ArticleTemplate--section-section {
+  position: absolute;
+  left: 7.5%;
+  bottom: -1px;
+  margin: 0;
+  padding: 0;
+  font-size: 33px;
+  line-height: 40px;
+  color: var(--color-economist);
+  border-bottom: 1px solid var(--color-economist);
+}
+
+@media screen and (max-width: 860px) {
+  .world-in-numbers-ArticleTemplate--title {
+    font-size: 32px;
+    line-height: 43px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .world-in-numbers-ArticleTemplate--title {
+    font-size: 28px;
+    line-height: 37px;
+  }
+}

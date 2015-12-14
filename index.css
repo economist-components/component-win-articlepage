@@ -3,12 +3,14 @@
 @import '@economist/component-ad-panel';
 @import '@economist/component-video';
 @import '@economist/component-win-stats-container';
+@import '@economist/component-palette';
 
-@import "./shared";
-@import "./main";
-@import "./portrait";
-@import "./leader";
-@import "./predictors";
+@import './shared';
+@import './main';
+@import './portrait';
+@import './leader';
+@import './predictors';
+@import './numbers';
 
 :root {
   --color-white: #fff;
@@ -19,6 +21,5 @@
   --color-red: #E3120B;
   --color-mid-blue: #367FB6;
   --color-dark-blue: #253A43;
-
   --color-imagecaption-text: #9c9c9c;
 }

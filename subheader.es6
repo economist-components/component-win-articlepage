@@ -105,3 +105,35 @@ export class WinLeaderSubheader extends Component {
     );
   }
 }
+
+export class WinNumbersSubheader extends Component {
+  static get propTypes() {
+    return {
+      generateClassNameList: PropTypes.func,
+      title: PropTypes.string,
+    };
+  }
+
+  static get defaultProps() {
+    return {
+      generateClassNameList: defaultGenerateClassNameList,
+    };
+  }
+
+  render() {
+    const { generateClassNameList, title } = this.props;
+    return (
+      <ArticleSubheaderContainer generateClassNameList={generateClassNameList}>
+        <h2
+          itemProp="section"
+          className={[
+            ...generateClassNameList('ArticleTemplate--section-section'),
+            ...extendedSubheaderItemClasses,
+          ].join(' ')}
+        >
+          {title}
+        </h2>
+      </ArticleSubheaderContainer>
+    );
+  }
+}
