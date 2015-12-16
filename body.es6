@@ -3,7 +3,7 @@ import AdvertisementPanel from '@economist/component-ad-panel';
 import ImageCaption from '@economist/component-imagecaption';
 import Video from '@economist/component-video';
 import { Country } from '@economist/component-win-stats-container';
-
+import Industry from './industry';
 import { createVariant } from '@economist/component-variantify';
 
 const innerArticleBodyComponents = {
@@ -18,5 +18,6 @@ const StandardArticleBody = createVariant(
 const WorldInNumbersArticleBody = createVariant({
   ...innerArticleBodyComponents,
   Country,
+  Industry,
 })(ArticleBodyTemplate);
 export { StandardArticleBody, WorldInNumbersArticleBody };

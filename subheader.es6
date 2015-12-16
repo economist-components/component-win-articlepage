@@ -145,3 +145,43 @@ export class WinNumbersSubheader extends Component {
     );
   }
 }
+
+export class WinFiguresSubheader extends Component {
+  static get propTypes() {
+    return {
+      generateClassNameList: PropTypes.func,
+      title: PropTypes.string,
+    };
+  }
+
+  static get defaultProps() {
+    return {
+      generateClassNameList: defaultGenerateClassNameList,
+    };
+  }
+
+  render() {
+    const { generateClassNameList, title } = this.props;
+    return (
+      <ArticleSubheaderContainer generateClassNameList={generateClassNameList}>
+        <div
+          itemProp="section"
+          className={[
+            ...generateClassNameList('ArticleTemplate--section-section-wrapper'),
+            ...extendedSubheaderItemClasses,
+          ].join(' ')}
+        >
+          <h2
+            itemProp="section"
+            className={[
+              ...generateClassNameList('ArticleTemplate--section-section'),
+              ...extendedSubheaderItemClasses,
+            ].join(' ')}
+          >
+            {title}
+          </h2>
+        </div>
+      </ArticleSubheaderContainer>
+    );
+  }
+}
