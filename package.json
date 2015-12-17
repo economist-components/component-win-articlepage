@@ -21,6 +21,11 @@
     "!karma.conf.js",
     "!testbundle.js"
   ],
+  "assets": [
+    "assets/apple.png",
+    "assets/google.png",
+    "assets/mobile.png"
+  ],
   "browserify": {
     "transform": [
       "babelify"
