@@ -113,7 +113,7 @@
   "scripts": {
     "ci": "./build.sh",
     "build:images": "svgo --pretty --config=.svgo.yml -f images -o assets",
-    "doc": "parallelshell 'npm run build:images' 'npm run doc:html' 'npm run doc:js' 'npm run doc:css'",
+    "doc": "parallelshell 'npm run doc:html' 'npm run doc:js' 'npm run doc:css'",
     "doc:css": "cssnext --sourcemap example.css bundle.css",
     "doc:css:watch": "npm run doc:css -- --watch",
     "doc:html": "npm-assets . && devpack-doc index standalone",
@@ -124,7 +124,7 @@
     "lint": "eslint $npm_package_config_lint_opts .",
     "pages": "git stash save -u pages-stash && git branch -D gh-pages; git checkout --orphan gh-pages && git add -f $npm_package_config_ghpages_files && git commit -anm'ghpages' && git push origin HEAD:gh-pages -f",
     "prepages": "npm run doc",
-    "prepublish": "babel . -d . -x .es6 --ignore node_modules",
+    "prepublish": "npm run build:images && babel . -d . -x .es6 --ignore node_modules",
     "prepublish:watch": "npm run prepublish -- -w",
     "pretest": "npm run lint",
     "provision": "devpack-configure ./package.json",
