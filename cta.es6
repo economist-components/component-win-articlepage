@@ -11,8 +11,8 @@ export default function CallToAction({
     >
       <div className="app-cta">
         <div className="app-cta__mobile"><img src="/assets/mobile.svg" alt="" /></div>
-        <div className="app-cta__text">Thank you for reading The World in 2016. Get access to all
-        articles straight away on your mobile device.</div>
+        <div className="app-cta__text">You are reading a small selection of content from <i>The World in 2016</i>.
+        To read all the articles in this year&rsquo;s edition download <i>The World in 2016</i> app.</div>
         <div className="app-cta__images">
           <div className="app-cta__image app-cta__image--apple">
             <a href={`https://188807.measurementapi.com/serve?action=click&
