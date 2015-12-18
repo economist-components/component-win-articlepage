@@ -9,6 +9,7 @@ import {
   WorldInNumbersArticleBody as WorldInNumbersWinArticleBody,
 } from './body';
 import { WinFooter } from './footer';
+import CallToAction from './cta';
 
 const config = {
   defaultVariant: 'world-in-main',
@@ -41,6 +42,7 @@ const config = {
       ArticleHeader: WinNumbersHeader,
       ArticleSubheader: WinNumbersSubheader,
       ArticleBody: WorldInNumbersWinArticleBody,
+      ArticleFooter: CallToAction,
     },
   },
 };
