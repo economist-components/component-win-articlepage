@@ -76,7 +76,16 @@ article:not(.world-in-portrait-ArticleTemplate--container) .ArticleTemplate--app
 .app-cta__image {
   display: table-cell;
   vertical-align: middle;
-  text-align: center;
+  text-align: left;
+}
+
+.app-cta__image--apple {
+  text-align: right;
+  padding-right: 8px;
+}
+
+.app-cta__image--google {
+  padding-left: 8px;
 }
 
 .app-cta__image img {
@@ -119,24 +128,31 @@ article:not(.world-in-portrait-ArticleTemplate--container) .ArticleTemplate--app
   .app-cta__text {
     margin: 0;
     padding-left: 20px;
-    width: 50%;
+    width: 60%;
   }
 
   .app-cta__mobile,
   .app-cta__text,
   .app-cta__images {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: bottom;
     text-align: left;
+  }
+
+  .app-cta__images {
+    text-align: right;
   }
 
   .app-cta__image {
     display: inline-block;
     text-align: right;
+    padding-bottom: 8px;
+    vertical-align: bottom;
+    max-width: 112px;
   }
 
   .app-cta__image img {
-    width: 70%;
+    width: 100%;
   }
 }
 

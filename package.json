@@ -22,9 +22,9 @@
     "!testbundle.js"
   ],
   "assets": [
-    "assets/apple.png",
-    "assets/google.png",
-    "assets/mobile.png"
+    "assets/apple.svg",
+    "assets/google.svg",
+    "assets/mobile.svg"
   ],
   "browserify": {
     "transform": [
@@ -112,7 +112,8 @@
   },
   "scripts": {
     "ci": "./build.sh",
-    "doc": "parallelshell 'npm run doc:html' 'npm run doc:js' 'npm run doc:css'",
+    "build:images": "svgo --pretty --config=.svgo.yml -f images -o assets",
+    "doc": "parallelshell 'npm run build:images' 'npm run doc:html' 'npm run doc:js' 'npm run doc:css'",
     "doc:css": "cssnext --sourcemap example.css bundle.css",
     "doc:css:watch": "npm run doc:css -- --watch",
     "doc:html": "npm-assets . && devpack-doc index standalone",
@@ -172,6 +173,7 @@
     "pre-commit": "^1.0.10",
     "react-addons-test-utils": "^0.14.3",
     "react-dom": "^0.14.3",
+    "svgo": "^0.5.3",
     "teaspoon": "^5.0.1",
     "watchify": "^3.4.0"
   },
