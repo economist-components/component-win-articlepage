@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function CallToAction({
-  generateClassNameList,
+  generateClassNameList = (defaultClass) => (defaultClass),
 }) {
   return (
     <div
