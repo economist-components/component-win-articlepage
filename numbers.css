@@ -13,7 +13,7 @@
 
 .world-in-numbers-ArticleTemplate--title-strap {
   font-family: 'Officina';
-  margin-top: 37px;
+  margin: 30px 0;
 }
 
 .world-in-numbers-ArticleTemplate--header {
@@ -55,6 +55,25 @@
   color: var(--color-economist);
   border-bottom: 1px solid var(--color-economist);
 }
+
+.world-in-numbers-ArticleTemplate--header .countries__select {
+  font-family: 'Officina';
+  border-radius: 0;
+  outline: none;
+  appearance: none;
+  box-shadow: none;
+  color: white;
+  background-color: var(--color-kiev);
+  border: 0;
+  border-bottom: 3px solid var(--color-economist);
+  font-size: 22px;
+  font-weight: bold;
+  padding: 5px 20px;
+  cursor: pointer;
+  min-width: 260px;
+}
+
+.world-in-numbers-ArticleTemplate--header .countries__option {}
 
 @media screen and (max-width: 860px) {
   .world-in-numbers-ArticleTemplate--section-section-wrapper {
