@@ -15,7 +15,7 @@ describe('variant-article', () => {
   describe('WorldInArticle', () => {
 
     it('is compatible with React.Component', () => {
-      WorldInArticle.should.be.a('function').and.respondTo('render');
+      WorldInArticle.should.be.a('function');
     });
 
     it('renders a React element', () => {
