@@ -3,14 +3,14 @@
 @import './industry';
 
 .world-in-numbers-ArticleTemplate--title,
-.world-in-figures-ArticleTemplate--title {
+.world-in-industries-ArticleTemplate--title {
   font-family: 'Officina';
   font-size: 40px;
   line-height: 52px;
 }
 
 .world-in-numbers-ArticleTemplate--title-uppercase,
-.world-in-figures-ArticleTemplate--title-uppercase {
+.world-in-industries-ArticleTemplate--title-uppercase {
   text-transform: uppercase;
   font-family: 'Neutra2Display';
   color: var(--color-economist);
@@ -18,25 +18,25 @@
 }
 
 .world-in-numbers-ArticleTemplate--title-strap,
-.world-in-figures-ArticleTemplate--title-strap {
+.world-in-industries-ArticleTemplate--title-strap {
   font-family: 'Officina';
   margin: 30px 0;
 }
 
 .world-in-numbers-ArticleTemplate--header,
-.world-in-figures-ArticleTemplate--header {
+.world-in-industries-ArticleTemplate--header {
   margin-bottom: 70px;
 }
 
 .world-in-numbers-ArticleTemplate--header,
 .world-in-numbers-ArticleTemplate--subheader,
-.world-in-figures-ArticleTemplate--header,
-.world-in-figures-ArticleTemplate--subheader {
+.world-in-industries-ArticleTemplate--header,
+.world-in-industries-ArticleTemplate--subheader {
   text-align: center;
 }
 
 .world-in-numbers-ArticleTemplate--subheader,
-.world-in-figures-ArticleTemplate--subheader {
+.world-in-industries-ArticleTemplate--subheader {
   margin: 0;
   width: 100%;
   border: 0 none;
@@ -92,7 +92,7 @@
   }
 
   .world-in-numbers-ArticleTemplate--title,
-  .world-in-figures-ArticleTemplate--title {
+  .world-in-industries-ArticleTemplate--title {
     font-size: 32px;
     line-height: 43px;
   }
@@ -107,7 +107,7 @@
 
 @media screen and (max-width: 480px) {
   .world-in-numbers-ArticleTemplate--title,
-  .world-in-figures-ArticleTemplate--title {
+  .world-in-industries-ArticleTemplate--title {
     font-size: 28px;
     line-height: 37px;
   }

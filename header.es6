@@ -281,7 +281,7 @@ export class WinNumbersHeader extends Component {
   }
 }
 
-export class WinFiguresHeader extends Component {
+export class WinIndustriesHeader extends Component {
   static get propTypes() {
     return {
       generateClassNameList: PropTypes.func,

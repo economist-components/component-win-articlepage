@@ -2,7 +2,7 @@
 import ArticleTemplate from '@economist/component-articletemplate';
 import createVariantSwitcher from '@economist/component-variantify';
 
-import { WinHeader, WinPredictorsHeader, WinNumbersHeader, WinFiguresHeader } from './header';
+import { WinHeader, WinPredictorsHeader, WinNumbersHeader, WinIndustriesHeader } from './header';
 import { WinSubheader, WinLeaderSubheader, WinNumbersSubheader } from './subheader';
 import {
   StandardArticleBody as StandardWinArticleBody,
@@ -44,8 +44,8 @@ const config = {
       ArticleBody: WorldInNumbersWinArticleBody,
       ArticleFooter: CallToAction,
     },
-    'world-in-figures': {
-      ArticleHeader: WinFiguresHeader,
+    'world-in-industries': {
+      ArticleHeader: WinIndustriesHeader,
       ArticleBody: WorldInNumbersWinArticleBody,
       ArticleFooter: CallToAction,
     },

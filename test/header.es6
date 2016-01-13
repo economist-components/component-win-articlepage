@@ -2,7 +2,7 @@
 import React from 'react';
 import { createRenderer } from 'react-addons-test-utils';
 
-import { WinHeader, WinPredictorsHeader, WinNumbersHeader } from '../header';
+import { WinHeader, WinPredictorsHeader, WinNumbersHeader, WinIndustriesHeader } from '../header';
 
 import $ from 'teaspoon';
 import chai from 'chai';
@@ -134,6 +134,15 @@ describe('header', () => {
         /* eslint-enable no-undefined */
       });
     });
+  });
 
+  describe('WinIndustriesHeader', () => {
+    it('is compatible with React.Component', () => {
+      WinIndustriesHeader.should.be.a('function').and.respondTo('render');
+    });
+
+    it('renders a React element', () => {
+      React.isValidElement(<WinIndustriesHeader />).should.equal(true);
+    });
   });
 });
