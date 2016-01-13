@@ -280,3 +280,53 @@ export class WinNumbersHeader extends Component {
     );
   }
 }
+
+export class WinIndustriesHeader extends Component {
+  static get propTypes() {
+    return {
+      generateClassNameList: PropTypes.func,
+      title: PropTypes.string,
+    };
+  }
+
+  static get defaultProps() {
+    return {
+      generateClassNameList: defaultGenerateClassNameList,
+    };
+  }
+
+  render() {
+    const { generateClassNameList } = this.props;
+    const titleEl = (
+      <div>
+        <h1
+          itemProp="alternativeHeadline"
+          className={[
+            ...generateClassNameList('ArticleTemplate--title'),
+            ...extendedHeaderItemClasses,
+          ].join(' ')}
+        >
+          <span
+            className={[
+              ...generateClassNameList('ArticleTemplate--title-uppercase'),
+              ...extendedHeaderItemClasses,
+            ].join(' ')}
+          >World In Numbers</span> Industries
+        </h1>
+        <div
+          className={[
+            ...generateClassNameList('ArticleTemplate--title-strap'),
+            ...extendedHeaderItemClasses,
+          ].join(' ')}
+        >
+          Our 2016 forecasts for Industries.
+        </div>
+      </div>
+    );
+    return (
+      <ArticleHeaderContainer generateClassNameList={generateClassNameList}>
+        {titleEl}
+      </ArticleHeaderContainer>
+    );
+  }
+}
