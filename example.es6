@@ -1,6 +1,6 @@
 import React from 'react';
 import WorldInArticle from '.';
-import article from './test/data/industry';
+import article from './test/data/article';
 // There is also sample data for world-in-numbers within './test/data/'
 
 export default (

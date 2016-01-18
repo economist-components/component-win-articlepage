@@ -48,36 +48,32 @@ export class WinFooter extends Component {
 
   render() {
     const { generateClassNameList, byline, bylineLocation, bio } = this.props;
+    function element(content, klass, extededClasses) {
+      let html = null;
+      if (content) {
+        html = (
+          <span
+            className={[
+              ...generateClassNameList(klass),
+              ...extededClasses,
+            ].join(' ')}
+            dangerouslySetInnerHTML={{ // eslint-disable-line react/no-danger
+              '__html': content,
+            }}
+          />
+        );
+      }
+
+      return html;
+    }
+
     return (
       <div>
         <ArticleFooterContainer generateClassNameList={generateClassNameList}>
           <BylineFooterContainer generateClassNameList={generateClassNameList}>
-            <h3
-              className={[
-                ...generateClassNameList(`ArticleTemplate--byline`),
-                ...extendedFooterBylineClasses,
-              ].join(' ')}
-            >
-              {byline}
-            </h3>
-            <span
-              className={[
-                ...generateClassNameList(`ArticleTemplate--byline-location`),
-                ...extendedFooterBylineDetailsClasses,
-              ].join(' ')}
-            >
-              {bylineLocation}
-            </span>
-
-            <span
-              className={[
-                ...generateClassNameList(`ArticleTemplate--byline-bio`),
-                ...extendedFooterBylineDetailsClasses,
-              ].join(' ')}
-              dangerouslySetInnerHTML={{ // eslint-disable-line react/no-danger
-                '__html': bio,
-              }}
-            />
+            {element(byline, 'ArticleTemplate--byline', extendedFooterBylineClasses)}
+            {element(bylineLocation, 'ArticleTemplate--byline-location', extendedFooterBylineDetailsClasses)}
+            {element(bio, 'ArticleTemplate--byline-bio')}
           </BylineFooterContainer>
         </ArticleFooterContainer>
         <CallToAction {...this.props} />
