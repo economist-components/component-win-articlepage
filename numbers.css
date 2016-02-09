@@ -67,7 +67,8 @@
   border-bottom: 1px solid var(--color-economist);
 }
 
-.world-in-numbers-ArticleTemplate--header .countries__select {
+.world-in-numbers-ArticleTemplate--header .countries__select,
+.world-in-industries-ArticleTemplate--header .industry__select {
   font-family: 'Officina';
   border-radius: 0;
   outline: none;

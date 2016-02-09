@@ -196,21 +196,33 @@ export class WinNumbersHeader extends Component {
     this.generateCountries = this.generateCountries.bind(this);
     this.generateCountryElement = this.generateCountryElement.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.scrollTo = this.scrollTo.bind(this);
     this.state = {
       value: 'select',
     };
   }
 
+  scrollTo(target) {
+    /* eslint-env browser */
+    const element = document.querySelector(`a[name=${target}]`);
+    const top = Math.floor(element.getBoundingClientRect().top - 100);
+    window.scrollTo(0, top);
+  }
+
   handleChange(event) {
-    const target = event.target.value;
-    const globalObject = global || (typeof window !== 'undefined' ? window : {});
+    if (!event && !event.target) {
+      return;
+    }
+
+    const target = event.target.value.replace('#', '');
+    this.scrollTo(target);
     this.setState({ selectValue: target });
-    globalObject.location = target;
   }
 
   generateCountries() {
-    const { content } = this.props;
+    let { content } = this.props;
     const countries = [];
+    content = content || [];
     content.map((item) => {
       if (item.component && item.component === 'Country') {
         countries.push({
@@ -285,6 +297,7 @@ export class WinIndustriesHeader extends Component {
   static get propTypes() {
     return {
       generateClassNameList: PropTypes.func,
+      content: PropTypes.array,
       title: PropTypes.string,
     };
   }
@@ -295,8 +308,72 @@ export class WinIndustriesHeader extends Component {
     };
   }
 
+  constructor() {
+    super(...arguments);
+    this.generateIndustries = this.generateIndustries.bind(this);
+    this.generateIndustryElement = this.generateIndustryElement.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.scrollTo = this.scrollTo.bind(this);
+    this.state = {
+      value: 'select',
+    };
+  }
+
+  scrollTo(target) {
+    /* eslint-env browser */
+    const element = document.querySelector(`a[name=${target}]`);
+    const top = Math.floor(element.getBoundingClientRect().top - 100);
+    window.scrollTo(0, top);
+  }
+
+  handleChange(event) {
+    if (!event && !event.target) {
+      return;
+    }
+
+    const target = event.target.value.replace('#', '');
+    this.scrollTo(target);
+    this.setState({ selectValue: target });
+  }
+
+  generateIndustries() {
+    let { content } = this.props;
+    const industries = [];
+    content = content || [];
+    content.map((item) => {
+      if (item.component && item.component === 'Industry') {
+        industries.push({
+          name: item.props.title,
+          slug: codify(item.props.title, { decode: false }),
+        });
+      }
+    });
+    return industries;
+  }
+
+  generateIndustryItem(industry, index) {
+    return (
+      <option value={`#${industry.slug}`} key={`industry-item-${index}`} className="industry__option">
+        {industry.name}
+      </option>
+    );
+  }
+
+  generateIndustryElement() {
+    const industries = this.generateIndustries();
+    return (
+      <select className="industry__select" value={this.state.selectValue} onChange={this.handleChange}>
+        <option value="select">Select an industry...</option>
+        {industries.map((industry, index) => {
+          return this.generateIndustryItem(industry, index);
+        })}
+      </select>
+    );
+  }
+
   render() {
     const { generateClassNameList } = this.props;
+    const industryElementList = this.generateIndustryElement();
     const titleEl = (
       <div>
         <h1
@@ -321,6 +398,8 @@ export class WinIndustriesHeader extends Component {
         >
           Our 2016 forecasts for Industries.
         </div>
+
+        {industryElementList}
       </div>
     );
     return (
