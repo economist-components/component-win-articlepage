@@ -134,7 +134,7 @@
   },
   "dependencies": {
     "@economist/component-ad-panel": "^1.1.0",
-    "@economist/component-articletemplate": "^8.0.0",
+    "@economist/component-articletemplate": "^8.0.1",
     "@economist/component-imagecaption": "^2.0.0",
     "@economist/component-palette": "^1.4.2",
     "@economist/component-picture": "^1.1.0",

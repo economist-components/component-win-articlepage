@@ -48,20 +48,40 @@ export class WinFooter extends Component {
 
   render() {
     const { generateClassNameList, byline, bylineLocation, bio } = this.props;
-    function element(content, klass, extededClasses) {
+    function createMarkup(content) {
+      return { __html: content }; //eslint-disable-line
+    }
+
+    function element({
+      content = null,
+      klass = '',
+      extededClasses,
+      useDanger = false,
+    }) {
       let html = null;
       if (content) {
-        html = (
-          <span
-            className={[
-              ...generateClassNameList(klass),
-              ...extededClasses,
-            ].join(' ')}
-            dangerouslySetInnerHTML={{ // eslint-disable-line react/no-danger
-              '__html': content,
-            }}
-          />
-        );
+        if (useDanger) {
+          html = (
+            <span
+              className={[
+                ...generateClassNameList(klass),
+                ...extededClasses,
+              ].join(' ')}
+              dangerouslySetInnerHTML={createMarkup(content)} //eslint-disable-line
+            />
+          );
+        } else {
+          html = (
+            <span
+              className={[
+                ...generateClassNameList(klass),
+                ...extededClasses,
+              ].join(' ')}
+            >
+              {content}
+            </span>
+          );
+        }
       }
 
       return html;
@@ -71,9 +91,21 @@ export class WinFooter extends Component {
       <div>
         <ArticleFooterContainer generateClassNameList={generateClassNameList}>
           <BylineFooterContainer generateClassNameList={generateClassNameList}>
-            {element(byline, 'ArticleTemplate--byline', extendedFooterBylineClasses)}
-            {element(bylineLocation, 'ArticleTemplate--byline-location', extendedFooterBylineDetailsClasses)}
-            {element(bio, 'ArticleTemplate--byline-bio')}
+            {element({
+              content: byline,
+              klass: 'ArticleTemplate--byline',
+              extendedClasses: extendedFooterBylineClasses,
+            })}
+            {element({
+              content: bylineLocation,
+              klass: 'ArticleTemplate--byline-location',
+              extendedClasses: extendedFooterBylineDetailsClasses,
+            })}
+            {element({
+              content: bio,
+              klass: 'ArticleTemplate--byline-bio',
+              useDanger: true,
+            })}
           </BylineFooterContainer>
         </ArticleFooterContainer>
         <CallToAction {...this.props} />
