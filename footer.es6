@@ -48,36 +48,64 @@ export class WinFooter extends Component {
 
   render() {
     const { generateClassNameList, byline, bylineLocation, bio } = this.props;
+    function createMarkup(content) {
+      return { __html: content }; //eslint-disable-line
+    }
+
+    function element({
+      content = null,
+      klass = '',
+      extededClasses,
+      useDanger = false,
+    }) {
+      let html = null;
+      if (content) {
+        if (useDanger) {
+          html = (
+            <span
+              className={[
+                ...generateClassNameList(klass),
+                ...extededClasses,
+              ].join(' ')}
+              dangerouslySetInnerHTML={createMarkup(content)} //eslint-disable-line
+            />
+          );
+        } else {
+          html = (
+            <span
+              className={[
+                ...generateClassNameList(klass),
+                ...extededClasses,
+              ].join(' ')}
+            >
+              {content}
+            </span>
+          );
+        }
+      }
+
+      return html;
+    }
+
     return (
       <div>
         <ArticleFooterContainer generateClassNameList={generateClassNameList}>
           <BylineFooterContainer generateClassNameList={generateClassNameList}>
-            <h3
-              className={[
-                ...generateClassNameList(`ArticleTemplate--byline`),
-                ...extendedFooterBylineClasses,
-              ].join(' ')}
-            >
-              {byline}
-            </h3>
-            <span
-              className={[
-                ...generateClassNameList(`ArticleTemplate--byline-location`),
-                ...extendedFooterBylineDetailsClasses,
-              ].join(' ')}
-            >
-              {bylineLocation}
-            </span>
-
-            <span
-              className={[
-                ...generateClassNameList(`ArticleTemplate--byline-bio`),
-                ...extendedFooterBylineDetailsClasses,
-              ].join(' ')}
-              dangerouslySetInnerHTML={{ // eslint-disable-line react/no-danger
-                '__html': bio,
-              }}
-            />
+            {element({
+              content: byline,
+              klass: 'ArticleTemplate--byline',
+              extendedClasses: extendedFooterBylineClasses,
+            })}
+            {element({
+              content: bylineLocation,
+              klass: 'ArticleTemplate--byline-location',
+              extendedClasses: extendedFooterBylineDetailsClasses,
+            })}
+            {element({
+              content: bio,
+              klass: 'ArticleTemplate--byline-bio',
+              useDanger: true,
+            })}
           </BylineFooterContainer>
         </ArticleFooterContainer>
         <CallToAction {...this.props} />

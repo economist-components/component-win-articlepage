@@ -9,6 +9,10 @@ export default function WorldInArticle(args) {
   );
 }
 
+WorldInArticle.defaultProps = {
+  scrollToOffset: 100,
+};
+
 if (process.env.NODE_ENV !== 'production') {
   WorldInArticle.propTypes = {
     sectionName: React.PropTypes.string,
@@ -17,5 +21,6 @@ if (process.env.NODE_ENV !== 'production') {
       adTag: React.PropTypes.string,
       reserveHeight: React.PropTypes.number,
     }),
+    scrollToOffset: React.PropTypes.number,
   };
 }
