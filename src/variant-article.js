@@ -1,3 +1,12 @@
+<<<<<<< HEAD:src/variant-article.js
+=======
+/* eslint object-shorthand: 0 */
+import ArticleTemplate from '@economist/component-articletemplate';
+import createVariantSwitcher from '@economist/component-variantify';
+
+import { WinHeader, WifHeader, WinPredictorsHeader, WinNumbersHeader, WinIndustriesHeader } from './header';
+import { WifSubheader, WinSubheader, WinLeaderSubheader, WinNumbersSubheader } from './subheader';
+>>>>>>> feat: added css for world if:variant-article.es6
 import {
   StandardArticleBody as StandardWinArticleBody,
   WorldInNumbersArticleBody as WorldInNumbersWinArticleBody,
