@@ -4,7 +4,6 @@
 @import '@economist/component-video';
 @import '@economist/component-win-stats-container';
 @import '@economist/component-palette';
-
 @import './shared';
 @import './main';
 @import './portrait';
@@ -16,10 +15,10 @@
   --color-white: #fff;
   --color-black: #000;
   --color-light-grey: #edeef0;
-  --color-dark-grey: #3C3C3C;
+  --color-dark-grey: #3c3c3c;
   --color-mid-grey: #c2c2c2;
-  --color-red: #E3120B;
-  --color-mid-blue: #367FB6;
-  --color-dark-blue: #253A43;
+  --color-red: #e3120b;
+  --color-mid-blue: #367fb6;
+  --color-dark-blue: #253a43;
   --color-imagecaption-text: #9c9c9c;
 }

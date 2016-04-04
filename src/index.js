@@ -1,10 +1,10 @@
 import React from 'react';
 import VariantArticle from './variant-article';
 
-export default function WorldInArticle(args) {
+export default function WorldInArticle(rest) {
   return (
     <VariantArticle
-      {...args}
+      {...rest}
     />
   );
 }

@@ -1,8 +1,0 @@
-@import '@economist/component-font-neutra2';
-@import "@economist/component-font-officina";
-
-@import '.';
-
-* {
-  -webkit-font-smoothing: antialiased;
-}

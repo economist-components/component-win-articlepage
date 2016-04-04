@@ -1,0 +1,90 @@
+.world-in-portrait-article-template__container {
+  background-color: #e7ebeb;
+}
+
+.world-in-portrait-article-template__header {
+  position: absolute;
+  bottom: -40px;
+  width: 83.1%;
+  height: auto;
+  min-height: 140px;
+  margin-left: 7.5%;
+  padding: 0;
+  background-color: transparent;
+  border-left: 1px solid var(--color-red);
+}
+
+.world-in-portrait-article-template__subheader {
+  margin-top: 40px;
+}
+
+.world-in-portrait-article-template__header::after {
+  content: none;
+  bottom: -3px;
+  background-color: #e7ebeb;
+}
+
+.world-in-portrait-article-template__imagecontainer {
+  position: relative;
+  background: linear-gradient(to bottom, #fff 0%, #fff 30%, #e7ebeb 100%);
+}
+
+.world-in-portrait-article-template__image {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.world-in-portrait-article-template__title {
+  width: 100%;
+  padding: 16px 3% 40px 3%;
+  color: var(--color-dark-grey);
+  line-height: 0;
+  background-color: transparent;
+}
+
+.world-in-portrait-article-template__rubric {
+  width: 96.9%;
+  margin: 0;
+  padding: 15px 3% 3% 3%;
+  color: var(--color-white);
+  font-style: italic;
+  background-color: #748c94;
+  border-left: 1px solid #ccc;
+}
+
+.world-in-portrait-article-template__byline {
+  display: none;
+}
+
+@media screen and (max-width: 860px) {
+  .world-in-portrait-article-template__flytitle,
+  .world-in-portrait-article-template__title {
+    text-shadow: 0 0 18px #eaeeef;
+  }
+  .world-in-portrait-article-template__header {
+    position: relative;
+    margin-top: -130px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .world-in-portrait-article-template__header {
+    top: 20px;
+    margin-top: 0;
+  }
+  .world-in-portrait-article-template__title {
+    min-height: 280px;
+    padding: 0 0 5px 3%;
+    line-height: inherit;
+    text-shadow: none;
+  }
+  .world-in-portrait-article-template__image {
+    position: absolute;
+    top: 12%;
+  }
+  .world-in-portrait-article-template__subheader {
+    margin-top: 0;
+  }
+}

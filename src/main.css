@@ -1,54 +1,51 @@
-.world-in-main-ArticleTemplate--container {
+.world-in-main-article-template__container {
   background-color: var(--color-white);
 }
 
-.world-in-main-ArticleTemplate--header {
-  height: auto;
-  border-left: 1px solid var(--color-red);
-  margin-left: 7.5%;
-  width: 80%;
+.world-in-main-article-template__header {
+  position: relative;
   bottom: 0;
+  width: 80%;
+  height: auto;
   margin-top: -80px;
+  margin-left: 7.5%;
+  background-color: rgba(37, 58, 67, 0.95);
+  border-left: 1px solid var(--color-red);
+}
+
+.world-in-main-article-template__imagecontainer {
   position: relative;
 }
 
-.world-in-main-ArticleTemplate--imagecontainer {
-  position: relative;
-}
-
-.world-in-main-ArticleTemplate--image {
+.world-in-main-article-template__image {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
 }
 
-.world-in-main-ArticleTemplate--title, .world-in-main-ArticleTemplate--rubric {
+.world-in-main-article-template__title, .world-in-main-article-template__rubric {
   color: var(--color-white);
 }
 
-.world-in-main-ArticleTemplate--title {
+.world-in-main-article-template__title {
   line-height: 48px;
 }
 
-.world-in-main-ArticleTemplate--rubric {
-  padding: 10px 0;
+.world-in-main-article-template__rubric {
   margin-top: 0;
   margin-bottom: 0;
+  padding: 10px 0;
 }
 
-.world-in-main-ArticleTemplate--header {
-  background-color: rgba(37, 58, 67, 0.95);
-}
-
-article:not(.world-in-portrait-ArticleTemplate--container) .ArticleTemplate--app-cta {
+.article-template__container:not(.world-in-portrait-article-template__container) .article-template__app-cta {
   width: 100%;
-  background: linear-gradient(to bottom, rgba(231,235,235,1) 10%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom, rgba(231, 235, 235, 1) 10%, rgba(255, 255, 255, 1) 100%);
 }
 
 .app-cta {
+  max-width: 1090px;
   margin: 70px 7.5% 0 7.5%;
   padding: 30px 0 70px 30px;
-  max-width: 1090px;
   line-height: 0;
 }
 
@@ -57,13 +54,13 @@ article:not(.world-in-portrait-ArticleTemplate--container) .ArticleTemplate--app
   max-width: 105px;
 }
 
-.app-cta__mobile img {
+.app-cta__mobile .app-cta__device-image {
   width: 100%;
 }
 
 .app-cta__text {
   margin: 15px 0 20px 0;
-  font-family: 'Officina';
+  font-family: Officina;
   font-size: 18px;
   line-height: 28px;
 }
@@ -80,15 +77,15 @@ article:not(.world-in-portrait-ArticleTemplate--container) .ArticleTemplate--app
 }
 
 .app-cta__image--apple {
-  text-align: right;
   padding-right: 8px;
+  text-align: right;
 }
 
 .app-cta__image--google {
   padding-left: 8px;
 }
 
-.app-cta__image img {
+.app-cta__image .app-cta__device-image {
   width: 80%;
   max-width: 160px;
 }
@@ -97,8 +94,7 @@ article:not(.world-in-portrait-ArticleTemplate--container) .ArticleTemplate--app
   .app-cta__mobile {
     width: 20%;
   }
-
-  .app-cta__image img {
+  .app-cta__image .app-cta__device-image {
     width: 60%;
   }
 }
@@ -109,7 +105,6 @@ article:not(.world-in-portrait-ArticleTemplate--container) .ArticleTemplate--app
     width: 10%;
     margin-right: 15px;
   }
-
   .app-cta__text {
     margin-bottom: 30px;
   }
@@ -119,18 +114,15 @@ article:not(.world-in-portrait-ArticleTemplate--container) .ArticleTemplate--app
   .app-cta {
     display: table;
   }
-
   .app-cta__mobile {
     float: none;
     margin: 0;
   }
-
   .app-cta__text {
+    width: 60%;
     margin: 0;
     padding-left: 20px;
-    width: 60%;
   }
-
   .app-cta__mobile,
   .app-cta__text,
   .app-cta__images {
@@ -138,32 +130,28 @@ article:not(.world-in-portrait-ArticleTemplate--container) .ArticleTemplate--app
     vertical-align: bottom;
     text-align: left;
   }
-
   .app-cta__images {
     text-align: right;
   }
-
   .app-cta__image {
     display: inline-block;
-    text-align: right;
-    padding-bottom: 8px;
     vertical-align: bottom;
     max-width: 112px;
+    padding-bottom: 8px;
+    text-align: right;
   }
-
-  .app-cta__image img {
+  .app-cta__image .app-cta__device-image {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 860px) {
-  .world-in-main-ArticleTemplate--flytitle,
-  .world-in-main-ArticleTemplate--title {
+  .world-in-main-article-template--flytitle,
+  .world-in-main-article-template--title {
     line-height: 35px;
   }
-
-  .world-in-main-ArticleTemplate--header {
-    margin-top: -50px;
+  .world-in-main-article-template--header {
     position: relative;
+    margin-top: -50px;
   }
 }
