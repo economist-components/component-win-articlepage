@@ -1,0 +1,321 @@
+/* stylelint-disable selector-no-type */
+
+.article-template__container a {
+  color: #253a43;
+  font-family: Officina;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.article-template__container a:hover {
+  text-decoration: underline;
+}
+
+/* stylelint-enable selector-no-type */
+
+.article-template__imagecontainer {
+  min-height: 250px;
+}
+
+.article-template__container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+.article-template__flytitle {
+  display: none;
+  margin: 0;
+}
+
+.article-template__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Officina;
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.article-template__rubric {
+  font-family: Officina;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 38px;
+}
+
+.article-template__header {
+  padding: 3%;
+}
+
+.article-template__header::after {
+  display: block;
+  position: absolute;
+  left: 100%;
+  width: 150px;
+  height: 43px;
+  color: #fff;
+}
+
+.article-template__header-section {
+  display: inline-block;
+  position: absolute;
+  bottom: -136px;
+  height: 30px;
+  margin-top: 0;
+  margin-bottom: 7px;
+  padding: 0 14px 0 12px;
+  color: var(--color-red);
+  font-family: Officina;
+  font-size: 14px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+/* stylelint-disable selector-no-type */
+
+.article-template__section > p,
+.crosshead,
+.image-caption,
+.video__container {
+  width: 57.9%;
+  margin-left: 7.5%;
+  padding-left: 3%;
+}
+
+/* stylelint-enable selector-no-type */
+
+.image-caption__text {
+  color: var(--color-imagecaption-text);
+  font-size: 16px;
+  text-align: right;
+}
+
+.article-template__section {
+  margin-bottom: 50px;
+  color: var(--color-dark-grey);
+  font-family: Georgia, serif;
+  font-size: 21px;
+  line-height: 34px;
+}
+
+/* stylelint-disable selector-no-type */
+
+.article-template__section > p:first-of-type {
+  margin-top: 0;
+  border-left: 1px solid #ccc;
+}
+
+/* stylelint-enable selector-no-type */
+
+.article-template__subheader {
+  padding-top: 20px;
+  padding-left: 3%;
+  border-left: 1px solid #808080;
+}
+
+.article-template__pubdate {
+  margin: 0;
+  color: var(--color-mid-blue);
+  font-family: Officina;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.article-template__byline {
+  margin: 0;
+  color: var(--color-dark-blue);
+  font-family: Officina;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.article-template__byline-footer::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.article-template__section-name {
+  margin: 0;
+  color: var(--color-red);
+  font-family: Neutra2Display;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.article-template__bio,
+.article-template__byline-location {
+  float: left;
+  width: 100%;
+  margin-left: 3%;
+  color: var(--color-dark-grey);
+  font-family: Officina;
+  font-size: 14px;
+}
+
+.article-template__byline-location {
+  font-weight: bold;
+}
+
+.article-template__bio {
+  margin-bottom: 40px;
+}
+
+.article-template__byline-footer {
+  padding-top: 40px;
+}
+
+.article-template__byline-footer .article-template__byline {
+  display: inline-block;
+  width: auto;
+  margin: 0 0 0 3%;
+  padding: 5px 0 0 0;
+  border-top: 1px solid #ccc;
+}
+
+.article-template__byline-footer .article-template__byline::before {
+  content: 'by ';
+  float: left;
+  width: 24px;
+  color: #ccc;
+  font-family: Officina;
+  font-size: 20px;
+}
+
+.crosshead {
+  margin-bottom: 0;
+  padding-left: 3%;
+  font-family: Officina;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* stylelint-disable selector-no-type */
+
+.crosshead + p {
+  margin-top: 0;
+}
+
+.crosshead p {
+  margin: 0;
+}
+
+/* stylelint-enable selector-no-type */
+
+.ad-panel__container {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.ad-panel__container--styled .ad-panel__googlead::before,
+.ad-panel__container--styled .ad-panel__googlead {
+  background-color: transparent;
+}
+
+.ad-panel__container--styled .ad-panel__googlead {
+  margin-bottom: 1.7em;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .article-template__flytitle {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .article-template__header-section {
+    height: 25px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .article-template__flytitle,
+  .article-template__title {
+    font-size: 30px;
+  }
+  .article-template__rubric {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .article-template__header-section {
+    font-size: 18px;
+  }
+  /* stylelint-disable selector-no-type */
+  .article-template__section > p,
+  .crosshead,
+  .image-caption,
+  .video__container {
+    width: 83.1%;
+  }
+  /* stylelint-enable selector-no-type */
+  .article-template__header {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* stylelint-disable selector-no-type */
+  .article-template__section > p,
+  .crosshead,
+  .image-caption,
+  .video__container {
+    padding-left: 0;
+  }
+  .article-template__section > p:first-of-type {
+    padding-top: 40px;
+    border-left: none;
+  }
+  /* stylelint-enable selector-no-type */
+  .image-caption__text {
+    font-size: 14px;
+  }
+  .article-template__subheader {
+    margin-bottom: 20px;
+    padding-top: 18px;
+  }
+  .article-template__imagecontainer {
+    min-height: auto;
+    background: none;
+  }
+  /* stylelint-disable selector-no-type */
+  .article-template__section > p {
+    margin: 0 0.9% 15px 7.5%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .crossheads p {
+    font-size: 18px;
+  }
+  /* stylelint-enable selector-no-type */
+  .article-template__byline-footer {
+    margin: 0 0.9% 15px 7.5%;
+    padding-bottom: 40px;
+  }
+  .article-template__byline-footer .article-template__byline,
+  .article-template__byline-location,
+  .article-template__bio {
+    margin: 0;
+  }
+  /* stylelint-disable selector-no-type */
+  .article-template__section p:last-of-type::after {
+    margin-top: 11px;
+    margin-left: 3px;
+  }
+  /* stylelint-enable selector-no-type */
+  .article-template__byline {
+    font-size: 18px;
+  }
+  .article-template__pubdate {
+    font-size: 14px;
+  }
+  .article-template__section-name {
+    font-size: 14px;
+  }
+  .article-template__byline-footer .article-template__byline::before {
+    width: 22px;
+    font-size: 18px;
+  }
+}

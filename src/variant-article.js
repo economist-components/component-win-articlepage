@@ -1,15 +1,18 @@
-/* eslint object-shorthand: 0 */
-import ArticleTemplate from '@economist/component-articletemplate';
-import createVariantSwitcher from '@economist/component-variantify';
-
-import { WinHeader, WinPredictorsHeader, WinNumbersHeader, WinIndustriesHeader } from './header';
-import { WinSubheader, WinLeaderSubheader, WinNumbersSubheader } from './subheader';
 import {
   StandardArticleBody as StandardWinArticleBody,
   WorldInNumbersArticleBody as WorldInNumbersWinArticleBody,
 } from './body';
-import { WinFooter } from './footer';
+import ArticleTemplate from '@economist/component-articletemplate';
 import CallToAction from './cta';
+import WinFooter from './footer';
+import WinHeader from './header-win';
+import WinIndustriesHeader from './header-industries';
+import WinLeaderSubheader from './subheader-leader';
+import WinNumbersHeader from './header-numbers';
+import WinNumbersSubheader from './subheader-numbers';
+import WinPredictorsHeader from './header-predictors';
+import WinSubheader from './subheader-win';
+import createVariantSwitcher from '@economist/component-variantify';
 
 const config = {
   defaultVariant: 'world-in-main',

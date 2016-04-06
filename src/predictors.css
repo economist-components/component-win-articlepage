@@ -1,0 +1,143 @@
+.world-in-predictors-article-template {
+  background: linear-gradient(to bottom, #fff 0%, #e8eff7 14%);
+  background-color: #fff;
+}
+
+.world-in-predictors-article-template__header {
+  width: 83.1%;
+  height: auto;
+  min-height: 140px;
+  margin-top: 3%;
+  margin-left: 7.5%;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border-left: 1px solid #e3120b;
+}
+
+.world-in-predictors-article-template__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.world-in-predictors-article-template__imagecontainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 83.1%;
+}
+
+.world-in-predictors-article-template__section {
+  position: relative;
+  padding-top: 40px;
+}
+
+.world-in-predictors-article-template__flytitle,
+.world-in-predictors-article-template__title,
+.world-in-predictors-article-template__rubric {
+  position: relative;
+  z-index: 1;
+}
+
+.world-in-predictors-article-template__subheader {
+  position: relative;
+}
+
+.world-in-predictors-article-template__imagecontainer-inner {
+  background-color: transparent;
+}
+
+.world-in-predictors-article-template__title,
+.world-in-predictors-article-template__rubric {
+  width: 64%;
+  color: var(--color-dark-blue);
+  background-color: transparent;
+}
+
+.world-in-predictors-article-template__section-name {
+  color: #003d5d;
+}
+
+.world-in-predictors-article-template__flytitle {
+  display: block;
+  padding: 0 0 5px 3%;
+  color: var(--color-red);
+  font-family: Officina;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.world-in-predictors-article-template__title {
+  padding: 10px 3%;
+  line-height: 48px;
+}
+
+.world-in-predictors-article-template__rubric {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  padding-left: 3%;
+}
+
+.world-in-predictors-article-template__byline {
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 860px) {
+  .world-in-predictors-article-template__container {
+    background: linear-gradient(to bottom, #fff 6%, #fff 7%, #e8eff7 19%, #e8eff7 100%);
+  }
+  .world-in-predictors-article-template__imagecontainer {
+    position: relative;
+    max-width: 100%;
+  }
+  .world-in-predictors-article-template__flytitle,
+  .world-in-predictors-article-template__title {
+    line-height: 35px;
+  }
+  .world-in-predictors-article-template__title,
+  .world-in-predictors-article-template__rubric {
+    width: 65%;
+  }
+  .world-in-predictors-article-template__rubric {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .world-in-predictors-article-template__header {
+    top: 20px;
+  }
+  .world-in-predictors-article-template__rubric {
+    width: 100%;
+  }
+  .world-in-predictors-article-template__title {
+    width: 100%;
+  }
+  .world-in-predictors-article-template__section {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .world-in-predictors-article-template__container {
+    background: linear-gradient(to bottom, #fff 0%, #fff 5%, #e8eff7 12%, #e8eff7 100%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .world-in-predictors-article-template__rubric {
+    width: 100%;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .world-in-predictors-article-template__title {
+    width: 100%;
+    padding-top: 0;
+  }
+  .world-in-predictors-article-template__subheader {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,111 @@
+@import '@economist/component-font-officina';
+@import '@economist/component-palette';
+@import './industry';
+
+.world-in-numbers-article-template__title,
+.world-in-industries-article-template__title {
+  font-family: Officina;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.world-in-numbers-article-template__title-uppercase,
+.world-in-industries-article-template__title-uppercase {
+  color: var(--color-economist);
+  font-family: Neutra2Display;
+  font-weight: inherit;
+  text-transform: uppercase;
+}
+
+.world-in-numbers-article-template__title-strap,
+.world-in-industries-article-template__title-strap {
+  margin: 30px 0;
+  font-family: Officina;
+}
+
+.world-in-numbers-article-template__header,
+.world-in-industries-article-template__header {
+  margin-bottom: 70px;
+}
+
+.world-in-numbers-article-template__header,
+.world-in-numbers-article-template__subheader,
+.world-in-industries-article-template__header,
+.world-in-industries-article-template__subheader {
+  text-align: center;
+}
+
+.world-in-numbers-article-template__subheader,
+.world-in-industries-article-template__subheader {
+  position: relative;
+  width: 100%;
+  height: 41px;
+  margin: 0 0 70px 0;
+  padding: 0;
+  border: 0 none;
+  border-bottom: 1px solid #979797;
+}
+
+.world-in-numbers-article-template__section-name-wrapper {
+  position: relative;
+  max-width: 836px;
+  height: 41px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.world-in-numbers-article-template__section-name {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  color: var(--color-economist);
+  font-size: 33px;
+  line-height: 1;
+  border-bottom: 1px solid var(--color-economist);
+}
+
+.world-in-numbers-article-template__header .countries__select,
+.world-in-industries-article-template__header .industry__select {
+  min-width: 260px;
+  padding: 5px 20px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  font-family: Officina;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: var(--color-kiev);
+  border: 0;
+  border-radius: 0;
+  border-bottom: 3px solid var(--color-economist);
+  box-shadow: none;
+  appearance: none;
+}
+
+@media screen and (max-width: 860px) {
+  .world-in-numbers-article-template__section-name-wrapper {
+    max-width: 502px;
+  }
+  .world-in-numbers-article-template__title,
+  .world-in-industries-article-template__title {
+    font-size: 32px;
+    line-height: 43px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .world-in-numbers-article-template__section-name-wrapper {
+    margin-right: 7.5%;
+    margin-left: 7.5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .world-in-numbers-article-template__title,
+  .world-in-industries-article-template__title {
+    font-size: 28px;
+    line-height: 37px;
+  }
+}
