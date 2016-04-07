@@ -4,6 +4,8 @@ import {
 } from './body';
 import ArticleTemplate from '@economist/component-articletemplate';
 import CallToAction from './cta';
+import WifHeader from './header-wif';
+import WifSubheader from './subheader-wif';
 import WinFooter from './footer';
 import WinHeader from './header-win';
 import WinIndustriesHeader from './header-industries';
@@ -17,6 +19,12 @@ import createVariantSwitcher from '@economist/component-variantify';
 const config = {
   defaultVariant: 'world-in-main',
   variants: {
+    'world-if': {
+      ArticleHeader: WifHeader,
+      ArticleSubheader: WifSubheader,
+      ArticleBody: StandardWinArticleBody,
+      ArticleFooter: WinFooter,
+    },
     'world-in-main': {
       ArticleHeader: WinHeader,
       ArticleSubheader: WinSubheader,

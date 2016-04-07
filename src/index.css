@@ -1,3 +1,5 @@
+@import '@economist/component-font-neutra2';
+@import '@economist/component-font-officina';
 @import '@economist/component-articletemplate';
 @import '@economist/component-picture';
 @import '@economist/component-ad-panel';
@@ -10,6 +12,7 @@
 @import './leader';
 @import './predictors';
 @import './numbers';
+@import './world-if';
 
 :root {
   --color-white: #fff;
