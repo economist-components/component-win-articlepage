@@ -17,6 +17,5 @@ export default (
     mainImage={article.attributes.mainimage}
     content={article.attributes.content}
     sectionName={article.attributes.section}
-    variantName={'world-in-predictors'}
   />
 );
