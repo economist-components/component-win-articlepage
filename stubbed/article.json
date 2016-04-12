@@ -1,0 +1,169 @@
+{
+   "id": 10461,
+   "slug": "baby-leaps-brave-new-world",
+   "title": "Baby leaps into a brave new world",
+   "flytitle": "",
+   "rubric": "The worldâ€™s first children from three genetic parents",
+   "byline": "Emma Hogan",
+   "bylineLocation": "",
+   "bio": "Britain correspondent, <em>The Economist</em>",
+   "publishDate": {
+      "raw": "2015-11-02T14:00:00.625Z",
+      "formatted": "Nov 2nd 2015, 14:00"
+   },
+   "mainImage": {
+      "sources": [
+         {
+            "url": "http://cms-worldin.economist.com/sites/default/files/styles/1190x560l/public/Britain-Three-parent-babies-3570x1680.jpg?itok=NdzcNwxo",
+            "width": 1190,
+            "height": 560,
+            "dppx": 1
+         },
+         {
+            "url": "http://cms-worldin.economist.com/sites/default/files/styles/2380x1120l/public/Britain-Three-parent-babies-3570x1680.jpg?itok=NB9ABZVM",
+            "width": 1190,
+            "height": 560,
+            "dppx": 2
+         },
+         {
+            "url": "http://cms-worldin.economist.com/sites/default/files/styles/original/public/Britain-Three-parent-babies-3570x1680.jpg?itok=hMiqh_YP",
+            "width": 1190,
+            "height": 560,
+            "dppx": 3
+         },
+         {
+            "url": "http://cms-worldin.economist.com/sites/default/files/styles/480x390p/public/Britain-Three-parent-babies-1440x1170_0.jpg?itok=u3inhB7H",
+            "width": 480,
+            "height": 390,
+            "dppx": 1
+         },
+         {
+            "url": "http://cms-worldin.economist.com/sites/default/files/styles/960x780p/public/Britain-Three-parent-babies-1440x1170_0.jpg?itok=oodkIpQo",
+            "width": 480,
+            "height": 390,
+            "dppx": 2
+         },
+         {
+            "url": "http://cms-worldin.economist.com/sites/default/files/styles/original/public/Britain-Three-parent-babies-1440x1170_0.jpg?itok=8fd-Wpqs",
+            "width": 480,
+            "height": 390,
+            "dppx": 3
+         }
+      ],
+      "alt": ""
+   },
+   "content": [
+      "<p>Each year around 100 children in Britain are born with a form of mitochondrial disease. The conditions, which range from deafness to heart disease and brain disorders, are often fatal. In 2016 a cure will come closer. Britain will become the first country to allow babies to be born using mitochondrial donation, creating children with genes from three people rather than two. It will inspire other countries to follow suit.</p> ",
+      "<p>Mitochondria are the power-packs providing energy to cells. They live in the part of the cell outside the nucleus, and have their own genomes, which are passed down through the maternal line. Around 2,500 women in Britain carry mitochondria with mutations that could adversely affect their children. At the moment, genetic diagnosis can test embryos for some of these. But such screening (allowing the selection of disease-free embryos) is fully effective only in certain cases.</p> ",
+      "<p>By contrast mitochondrial donation is an outright cure. The likeliest procedure involves removing the nucleus from an egg that comes from two parents through in-vitro fertilisation (IVF) and inserting it into an egg from a donor with healthy mitochondria which has had its nucleus removed. The embryo will then inherit the genes of three different people, though the contribution of the third party is modest: mitochondria contain only 37 of the roughly 20,000 genes which make up a human. Nuclear DNA, which provides the other 99.8%, will not be changed in the process, so inherited traits such as eye colour, a propensity for baldness and personality quirks will still come from two parents.</p> ",
+      {
+         "component": "AdvertisementPanel",
+         "props": {
+            "adTag": "/5605/theworldin",
+            "sizes": [
+               [
+                  0,
+                  0
+               ]
+            ],
+            "sizeMapping": [
+               [
+                  [
+                     1024,
+                     1
+                  ],
+                  [
+                     [
+                        1024,
+                        768
+                     ],
+                     [
+                        970,
+                        250
+                     ],
+                     [
+                        728,
+                        90
+                     ]
+                  ]
+               ],
+               [
+                  [
+                     768,
+                     1
+                  ],
+                  [
+                     [
+                        728,
+                        90
+                     ],
+                     [
+                        300,
+                        250
+                     ]
+                  ]
+               ],
+               [
+                  [
+                     320,
+                     1
+                  ],
+                  [
+                     [
+                        300,
+                        250
+                     ],
+                     [
+                        1,
+                        1
+                     ]
+                  ]
+               ]
+            ],
+            "reserveHeight": 100
+         }
+      },
+      "<p>Some oppose the procedure on religious or ethical grounds. A few worry that babies born this way will be sterile. Others dislike the idea of â€œthree-parent babiesâ€, as the media have dubbed them, or fret that, as mitochondria are passed down in eggs, any female children born from the process will pass the changed genes to their children. Those opposed will probably still create a fuss as the first procedures go ahead.</p> ",
+      "<p>But in 2016 the law will back the scientists, thanks to legislation passed in 2015. Once clinics have met the licensing conditions, the first pregnancies should start in 2016. Doug Turnbull of Newcastle University, who has been leading the research, thinks around ten or 20 women will go for the procedure at first, especially if it is offered on the National Health Service. But women may also come from abroad to have it. And scientists in America, Australia and elsewhere will be watching. Just as IVF spread across the globe, so too will mitochondrial donation.</p>"
+   ],
+   "sectionName": "Britain",
+   "variantName": "world-in-main",
+   "metaTags":[
+      {
+         "property": "og:type",
+         "content": "SIDEBAR"
+      },
+      {
+         "property": "og:title",
+         "content": "Baby leaps into a brave new world"
+      },
+      {
+         "property": "og:description",
+         "content": "Each year around 100 children in Britain are born with a form of mitochondrial disease. The conditions, which range from deafness to heart disease and brain disorders, are often fatal. In 2016 a cure will come closer. Britain will become the first country to allow babies to be born using mitochondrial donation, creating children with genes from three people rather than two. It will inspire other countries to follow suit.Mitochondria are the power-packs providing energy to cells."
+      },
+      {
+         "property": "og:image",
+         "content": "http://cms-worldin.economist.com/sites/default/files/styles/original/public/Britain-Three-parent-babies-3570x1680.jpg?itok=hMiqh_YP"
+      },
+      {
+         "property": "og:image:width",
+         "content": "1190"
+      },
+      {
+         "property": "og:image:height",
+         "content": "560"
+      },
+      {
+         "property": "twi_article:published_time",
+         "content": "2015-11-02T14:00:00.625Z"
+      },
+      {
+         "property": "twi_article:modified_time",
+         "content": "2016-01-20T17:32:51.772Z"
+      },
+      {
+         "property": "SIDEBAR:section",
+         "content": "Britain"
+      }
+   ]
+}

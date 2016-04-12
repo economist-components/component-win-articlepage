@@ -11,18 +11,18 @@ export default function WifSubheader({
   rubric,
   publishDate,
 }) {
-  const formattedPublishDate = new Date(publishDate).toDateString();
   return (
     <ArticleSubheaderContainer generateClassNameList={generateClassNameList}>
-      <div
+      <time
         itemProp="publishDate"
+        dateTime={publishDate.raw}
         className={[
           ...generateClassNameList('article-template__pubdate'),
           ...extendedSubheaderItemClasses,
         ].join(' ')}
       >
-        {formattedPublishDate}
-      </div>
+        {publishDate.formatted}
+      </time>
       <div
         itemProp="rubric"
         className={[
@@ -40,6 +40,9 @@ if (process.env.NODE_ENV !== 'production') {
   WifSubheader.propTypes = {
     generateClassNameList: React.PropTypes.func,
     rubric: React.PropTypes.string,
-    publishDate: React.PropTypes.string,
+    publishDate: React.PropTypes.shape({
+      raw: React.PropTypes.string,
+      formatted: React.PropTypes.string,
+    }),
   };
 }

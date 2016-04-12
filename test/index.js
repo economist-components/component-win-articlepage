@@ -6,7 +6,7 @@ import WinIndustriesHeader from '../src/header-industries';
 import WinNumbersHeader from '../src/header-numbers';
 import WinSubheader from '../src/subheader-win';
 import WorldInArticle from '../src';
-import article from '../example-data/article';
+import article from '../stubbed/article';
 import chai from 'chai';
 import chaiEnzyme from 'chai-enzyme';
 import { mount } from 'enzyme';
@@ -92,9 +92,9 @@ describe('WinSubheader', () => {
   let props = null;
   beforeEach(() => {
     props = {
-      byline: article.attributes.byline,
+      byline: article.byline,
       publishDate: article.publishDate,
-      sectionName: article.attributes.section,
+      sectionName: article.sectionName,
     };
   });
 
@@ -117,7 +117,7 @@ describe('WinSubheader', () => {
     it('should contain the data passed in within its HTML structure', () => {
       winSubheader.find('.article-template__byline').should.have.text(props.byline);
       winSubheader.find('.article-template__section-name').should.have.text(props.sectionName);
-      winSubheader.find('.article-template__pubdate').should.have.text('Tue Sep 29 2015');
+      winSubheader.find('.article-template__pubdate').should.have.text('Nov 2nd 2015, 14:00');
     });
   });
 });
@@ -229,18 +229,18 @@ describe('WorldInArticle', () => {
   beforeEach(() => {
     props = {
       id: article.id,
-      slug: article.attributes.slug,
-      byline: article.attributes.byline,
-      bylineLocation: article.attributes.byline_location,
-      bio: article.attributes.bio,
+      slug: article.slug,
+      byline: article.byline,
+      bylineLocation: article.byline_location,
+      bio: article.bio,
       publishDate: article.publishDate,
-      title: article.attributes.title,
-      flytitle: article.attributes.flytitle,
-      rubric: article.attributes.rubric,
-      mainImage: article.attributes.mainimage,
-      content: article.attributes.content,
-      sectionName: article.attributes.section,
-      variantName: article.attributes.variantName,
+      title: article.title,
+      flytitle: article.flytitle,
+      rubric: article.rubric,
+      mainImage: article.mainimage,
+      content: article.content,
+      sectionName: article.sectionName,
+      variantName: article.variantName,
     };
   });
 
@@ -268,16 +268,16 @@ describe('variant-article', () => {
   beforeEach(() => {
     props = {
       id: article.id,
-      slug: article.attributes.slug,
-      byline: article.attributes.byline,
-      bylineLocation: article.attributes.byline_location,
-      bio: article.attributes.bio,
+      slug: article.slug,
+      byline: article.byline,
+      bylineLocation: article.byline_location,
+      bio: article.bio,
       publishDate: article.publishDate,
-      title: article.attributes.title,
-      flytitle: article.attributes.flytitle,
-      rubric: article.attributes.rubric,
-      mainImage: article.attributes.mainimage,
-      content: article.attributes.content,
+      title: article.title,
+      flytitle: article.flytitle,
+      rubric: article.rubric,
+      mainImage: article.mainimage,
+      content: article.content,
       sectionName: 'Predictors',
       variantName: 'world-in-predictors',
     };
