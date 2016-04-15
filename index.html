@@ -218,24 +218,33 @@ pre[class*&#x3D;&quot;language-&quot;] {
     <div class="component-panel">
       <h2 id="example" class="component-panel-heading"><a href="#example">Example</a></h2>
       <pre><code>    <span class="token keyword" >import</span> <span class="token string" >'babel-polyfill'</span><span class="token punctuation" >;</span>
+    <span class="token keyword" >import</span> Impart <span class="token keyword" >from</span> <span class="token string" >'@economist/component-react-async-container'</span><span class="token punctuation" >;</span>
+    <span class="token keyword" >import</span> Loading <span class="token keyword" >from</span> <span class="token string" >'@economist/component-loading'</span><span class="token punctuation" >;</span>
     <span class="token keyword" >import</span> React <span class="token keyword" >from</span> <span class="token string" >'react'</span><span class="token punctuation" >;</span>
     <span class="token keyword" >import</span> WorldInArticle <span class="token keyword" >from</span> <span class="token string" >'./'</span><span class="token punctuation" >;</span>
-    <span class="token keyword" >import</span> article <span class="token keyword" >from</span> <span class="token string" >'../example-data/article'</span><span class="token punctuation" >;</span>
+    <span class="token keyword" >import</span> fetch <span class="token keyword" >from</span> <span class="token string" >'isomorphic-fetch'</span><span class="token punctuation" >;</span>
+    
+    <span class="token keyword" >function</span> <span class="token function" >fetchArticle</span><span class="token punctuation" >(</span><span class="token punctuation" >)</span> <span class="token punctuation" >{</span>
+      <span class="token keyword" >return</span> <span class="token function" >fetch</span><span class="token punctuation" >(</span><span class="token string" >'/stubbed/article.json'</span><span class="token punctuation" >)</span>
+        <span class="token punctuation" >.</span><span class="token function" >then</span><span class="token punctuation" >(</span><span class="token punctuation" >(</span>response<span class="token punctuation" >)</span> <span class="token operator" >=</span><span class="token operator" >></span> <span class="token punctuation" >(</span>response<span class="token punctuation" >.</span><span class="token function" >json</span><span class="token punctuation" >(</span><span class="token punctuation" >)</span><span class="token punctuation" >)</span><span class="token punctuation" >)</span><span class="token punctuation" >;</span>
+    <span class="token punctuation" >}</span>
+    
+    <span class="token keyword" >function</span> <span class="token function" >handleLoading</span><span class="token punctuation" >(</span><span class="token punctuation" >)</span> <span class="token punctuation" >{</span>
+      <span class="token keyword" >return</span> <span class="token operator" >&lt;</span>Loading <span class="token operator" >/</span><span class="token operator" >></span><span class="token punctuation" >;</span>
+    <span class="token punctuation" >}</span>
+    
+    <span class="token keyword" >function</span> <span class="token function" >handleFailure</span><span class="token punctuation" >(</span>errorDetails<span class="token punctuation" >)</span> <span class="token punctuation" >{</span>
+      <span class="token keyword" >return</span> <span class="token punctuation" >(</span>
+        <span class="token operator" >&lt;</span>div<span class="token operator" >></span>Error<span class="token punctuation" >:</span> <span class="token punctuation" >{</span>errorDetails<span class="token punctuation" >.</span>message<span class="token punctuation" >}</span><span class="token operator" >&lt;</span><span class="token operator" >/</span>div<span class="token operator" >></span>
+      <span class="token punctuation" >)</span><span class="token punctuation" >;</span>
+    <span class="token punctuation" >}</span>
     
     <span class="token keyword" >export</span> <span class="token keyword" >default</span> <span class="token punctuation" >(</span>
-      <span class="token operator" >&lt;</span>WorldInArticle
-        id<span class="token operator" >=</span><span class="token punctuation" >{</span>article<span class="token punctuation" >.</span>id<span class="token punctuation" >}</span>
-        slug<span class="token operator" >=</span><span class="token punctuation" >{</span>article<span class="token punctuation" >.</span>attributes<span class="token punctuation" >.</span>slug<span class="token punctuation" >}</span>
-        byline<span class="token operator" >=</span><span class="token punctuation" >{</span>article<span class="token punctuation" >.</span>attributes<span class="token punctuation" >.</span>byline<span class="token punctuation" >}</span>
-        bylineLocation<span class="token operator" >=</span><span class="token punctuation" >{</span>article<span class="token punctuation" >.</span>attributes<span class="token punctuation" >.</span>byline_location<span class="token punctuation" >}</span>
-        bio<span class="token operator" >=</span><span class="token punctuation" >{</span>article<span class="token punctuation" >.</span>attributes<span class="token punctuation" >.</span>bio<span class="token punctuation" >}</span>
-        publishDate<span class="token operator" >=</span><span class="token punctuation" >{</span>article<span class="token punctuation" >.</span>publishDate<span class="token punctuation" >}</span>
-        title<span class="token operator" >=</span><span class="token punctuation" >{</span>article<span class="token punctuation" >.</span>attributes<span class="token punctuation" >.</span>title<span class="token punctuation" >}</span>
-        flytitle<span class="token operator" >=</span><span class="token punctuation" >{</span>article<span class="token punctuation" >.</span>attributes<span class="token punctuation" >.</span>flytitle<span class="token punctuation" >}</span>
-        rubric<span class="token operator" >=</span><span class="token punctuation" >{</span>article<span class="token punctuation" >.</span>attributes<span class="token punctuation" >.</span>rubric<span class="token punctuation" >}</span>
-        mainImage<span class="token operator" >=</span><span class="token punctuation" >{</span>article<span class="token punctuation" >.</span>attributes<span class="token punctuation" >.</span>mainimage<span class="token punctuation" >}</span>
-        content<span class="token operator" >=</span><span class="token punctuation" >{</span>article<span class="token punctuation" >.</span>attributes<span class="token punctuation" >.</span>content<span class="token punctuation" >}</span>
-        sectionName<span class="token operator" >=</span><span class="token punctuation" >{</span>article<span class="token punctuation" >.</span>attributes<span class="token punctuation" >.</span>section<span class="token punctuation" >}</span>
+      <span class="token operator" >&lt;</span>Impart<span class="token punctuation" >.</span>RootContainer
+        Component<span class="token operator" >=</span><span class="token punctuation" >{</span>WorldInArticle<span class="token punctuation" >}</span>
+        route<span class="token operator" >=</span><span class="token punctuation" >{</span>fetchArticle<span class="token punctuation" >}</span>
+        renderLoading<span class="token operator" >=</span><span class="token punctuation" >{</span>handleLoading<span class="token punctuation" >}</span>
+        renderFailure<span class="token operator" >=</span><span class="token punctuation" >{</span>handleFailure<span class="token punctuation" >}</span>
       <span class="token operator" >/</span><span class="token operator" >></span>
     <span class="token punctuation" >)</span><span class="token punctuation" >;</span>
     
