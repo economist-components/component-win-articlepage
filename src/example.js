@@ -1,5 +1,6 @@
 import 'babel-polyfill';
 import Impart from '@economist/component-react-async-container';
+import Loading from '@economist/component-loading';
 import React from 'react';
 import WorldInArticle from './';
 import fetch from 'isomorphic-fetch';
@@ -10,7 +11,7 @@ function fetchArticle() {
 }
 
 function handleLoading() {
-  return (<div>Loading...</div>);
+  return <Loading />;
 }
 
 function handleFailure(errorDetails) {
