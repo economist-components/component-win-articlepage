@@ -3,7 +3,7 @@
    "slug": "baby-leaps-brave-new-world",
    "title": "Baby leaps into a brave new world",
    "flytitle": "",
-   "rubric": "The worldâ€™s first children from three genetic parents",
+   "rubric": "The world's first children from three genetic parents",
    "byline": "Emma Hogan",
    "bylineLocation": "",
    "bio": "Britain correspondent, <em>The Economist</em>",
@@ -53,78 +53,11 @@
       "alt": ""
    },
    "content": [
-      "<p>Each year around 100 children in Britain are born with a form of mitochondrial disease. The conditions, which range from deafness to heart disease and brain disorders, are often fatal. In 2016 a cure will come closer. Britain will become the first country to allow babies to be born using mitochondrial donation, creating children with genes from three people rather than two. It will inspire other countries to follow suit.</p> ",
-      "<p>Mitochondria are the power-packs providing energy to cells. They live in the part of the cell outside the nucleus, and have their own genomes, which are passed down through the maternal line. Around 2,500 women in Britain carry mitochondria with mutations that could adversely affect their children. At the moment, genetic diagnosis can test embryos for some of these. But such screening (allowing the selection of disease-free embryos) is fully effective only in certain cases.</p> ",
-      "<p>By contrast mitochondrial donation is an outright cure. The likeliest procedure involves removing the nucleus from an egg that comes from two parents through in-vitro fertilisation (IVF) and inserting it into an egg from a donor with healthy mitochondria which has had its nucleus removed. The embryo will then inherit the genes of three different people, though the contribution of the third party is modest: mitochondria contain only 37 of the roughly 20,000 genes which make up a human. Nuclear DNA, which provides the other 99.8%, will not be changed in the process, so inherited traits such as eye colour, a propensity for baldness and personality quirks will still come from two parents.</p> ",
-      {
-         "component": "AdvertisementPanel",
-         "props": {
-            "adTag": "/5605/theworldin",
-            "sizes": [
-               [
-                  0,
-                  0
-               ]
-            ],
-            "sizeMapping": [
-               [
-                  [
-                     1024,
-                     1
-                  ],
-                  [
-                     [
-                        1024,
-                        768
-                     ],
-                     [
-                        970,
-                        250
-                     ],
-                     [
-                        728,
-                        90
-                     ]
-                  ]
-               ],
-               [
-                  [
-                     768,
-                     1
-                  ],
-                  [
-                     [
-                        728,
-                        90
-                     ],
-                     [
-                        300,
-                        250
-                     ]
-                  ]
-               ],
-               [
-                  [
-                     320,
-                     1
-                  ],
-                  [
-                     [
-                        300,
-                        250
-                     ],
-                     [
-                        1,
-                        1
-                     ]
-                  ]
-               ]
-            ],
-            "reserveHeight": 100
-         }
-      },
-      "<p>Some oppose the procedure on religious or ethical grounds. A few worry that babies born this way will be sterile. Others dislike the idea of â€œthree-parent babiesâ€, as the media have dubbed them, or fret that, as mitochondria are passed down in eggs, any female children born from the process will pass the changed genes to their children. Those opposed will probably still create a fuss as the first procedures go ahead.</p> ",
-      "<p>But in 2016 the law will back the scientists, thanks to legislation passed in 2015. Once clinics have met the licensing conditions, the first pregnancies should start in 2016. Doug Turnbull of Newcastle University, who has been leading the research, thinks around ten or 20 women will go for the procedure at first, especially if it is offered on the National Health Service. But women may also come from abroad to have it. And scientists in America, Australia and elsewhere will be watching. Just as IVF spread across the globe, so too will mitochondrial donation.</p>"
+      "Each year around 100 children in Britain are born with a form of mitochondrial disease. The conditions, which range from deafness to heart disease and brain disorders, are often fatal. In 2016 a cure will come closer. Britain will become the first country to allow babies to be born using mitochondrial donation, creating children with genes from three people rather than two. It will inspire other countries to follow suit.",
+      "Mitochondria are the power-packs providing energy to cells. They live in the part of the cell outside the nucleus, and have their own genomes, which are passed down through the maternal line. Around 2,500 women in Britain carry mitochondria with mutations that could adversely affect their children. At the moment, genetic diagnosis can test embryos for some of these. But such screening (allowing the selection of disease-free embryos) is fully effective only in certain cases.",
+      "By contrast mitochondrial donation is an outright cure. The likeliest procedure involves removing the nucleus from an egg that comes from two parents through in-vitro fertilisation (IVF) and inserting it into an egg from a donor with healthy mitochondria which has had its nucleus removed. The embryo will then inherit the genes of three different people, though the contribution of the third party is modest: mitochondria contain only 37 of the roughly 20,000 genes which make up a human. Nuclear DNA, which provides the other 99.8%, will not be changed in the process, so inherited traits such as eye colour, a propensity for baldness and personality quirks will still come from two parents.",
+      "Some oppose the procedure on religious or ethical grounds. A few worry that babies born this way will be sterile. Others dislike the idea of â€œthree-parent babiesâ€, as the media have dubbed them, or fret that, as mitochondria are passed down in eggs, any female children born from the process will pass the changed genes to their children. Those opposed will probably still create a fuss as the first procedures go ahead.",
+      "But in 2016 the law will back the scientists, thanks to legislation passed in 2015. Once clinics have met the licensing conditions, the first pregnancies should start in 2016. Doug Turnbull of Newcastle University, who has been leading the research, thinks around ten or 20 women will go for the procedure at first, especially if it is offered on the National Health Service. But women may also come from abroad to have it. And scientists in America, Australia and elsewhere will be watching. Just as IVF spread across the globe, so too will mitochondrial donation."
    ],
    "sectionName": "Britain",
    "variantName": "world-in-main",

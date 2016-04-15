@@ -111,7 +111,7 @@ describe('WinSubheader', () => {
     });
 
     it('renders a top level <header />', () => {
-      winSubheader.find('.article-template__subheader').should.have.tagName('header');
+      winSubheader.should.have.tagName('header');
     });
 
     it('should contain the data passed in within its HTML structure', () => {
