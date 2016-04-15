@@ -12,7 +12,6 @@ export default function WinSubheader({
   byline,
   publishDate,
 }) {
-  const formattedPublishDate = new Date(publishDate).toDateString();
   return (
     <ArticleSubheaderContainer generateClassNameList={generateClassNameList}>
       <h2
@@ -24,15 +23,16 @@ export default function WinSubheader({
       >
         {byline}
       </h2>
-      <h2
+      <time
         itemProp="publishDate"
+        dateTime={publishDate.raw}
         className={[
           ...generateClassNameList('article-template__pubdate'),
           ...extendedSubheaderItemClasses,
         ].join(' ')}
       >
-        {formattedPublishDate}
-      </h2>
+        {publishDate.formatted}
+      </time>
       <h2
         itemProp="section"
         className={[
@@ -51,6 +51,9 @@ if (process.env.NODE_ENV !== 'production') {
     generateClassNameList: React.PropTypes.func,
     sectionName: React.PropTypes.string,
     byline: React.PropTypes.string,
-    publishDate: React.PropTypes.string,
+    publishDate: React.PropTypes.shape({
+      raw: React.PropTypes.string,
+      formatted: React.PropTypes.string,
+    }),
   };
 }

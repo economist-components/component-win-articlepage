@@ -1,21 +1,30 @@
 import 'babel-polyfill';
+import Impart from '@economist/component-react-async-container';
+import Loading from '@economist/component-loading';
 import React from 'react';
 import WorldInArticle from './';
-import article from '../example-data/article';
+import fetch from 'isomorphic-fetch';
+
+function fetchArticle() {
+  return fetch('/stubbed/article.json')
+    .then((response) => (response.json()));
+}
+
+function handleLoading() {
+  return <Loading />;
+}
+
+function handleFailure(errorDetails) {
+  return (
+    <div>Error: {errorDetails.message}</div>
+  );
+}
 
 export default (
-  <WorldInArticle
-    id={article.id}
-    slug={article.attributes.slug}
-    byline={article.attributes.byline}
-    bylineLocation={article.attributes.byline_location}
-    bio={article.attributes.bio}
-    publishDate={article.publishDate}
-    title={article.attributes.title}
-    flytitle={article.attributes.flytitle}
-    rubric={article.attributes.rubric}
-    mainImage={article.attributes.mainimage}
-    content={article.attributes.content}
-    sectionName={article.attributes.section}
+  <Impart.RootContainer
+    Component={WorldInArticle}
+    route={fetchArticle}
+    renderLoading={handleLoading}
+    renderFailure={handleFailure}
   />
 );
