@@ -1,0 +1,75 @@
+{
+  "id": "10476",
+  "attributes": {
+    "slug": "world-figures-industries",
+    "title": "The world in figures: Industries",
+    "content": [
+      {
+        "component": "Industry",
+        "props": {
+          "title": "Automotive"
+        },
+        "content": [
+          "Booming demand in emerging markets will boost global car sales by more than 8% in 2012, up from 6% the year before. Sales will be flattered by a post-earthquake jump in Japan. The world's two largest car markets, China and America, will grow by 14% and 9% respectively.Looking to satisfy China's voracious appetite for cars, VW, Nissan, Honda and Hyundai will open new factories in the country in 2012. Luxury marques will roll fastest from dealers' lots; JPMorgan, a bank, expects growth of more than 30% for premium models in China.India offers even better prospects: with only 17 cars per 1,000 people against 56 in China, sales growth in the subcontinent will overtake China's after 2013. <strong>To watch</strong>Cloud cars. Fiddling with smartphones while driving will be less hazardous when cars themselves go online. The Ford Evos concept car, features of which will appear in new European models in 2012, maintains a continuous internet connection, allowing the car's navigation system to suggest the best route based on traffic, weather and the driver's schedule."
+        ]
+      },
+      {
+        "component": "Industry",
+        "props": {
+          "title": "Defence"
+        },
+        "content": [
+          "Although America will continue to spend more on its armed forces than any other country, its defence budget will shrink by 5%, to just under $700bn, in 2012. This will be the first inflation-adjusted annual decline in spending since the late 1990s, thanks largely to the near-complete withdrawal of troops from Iraq and a large reduction from Afghanistan.All of Europe’s major armed forces will slash defence budgets. By contrast, China says it will return to double-digit spending increases, although the precise size of its budget, perhaps as large as $150bn annually, remains a mystery. Russia and India will boost defence spending, with Russia likely to capture third place in the global rankings, overtaking penny-pinching Britain and France. For aerospace and defence companies, the tightening of defence budgets in the West will intensify global competition and erode pricing power.<strong>To watch</strong>: Drone on. Spending on unmanned aerial vehicles will grow by 30% in 2012, to nearly $8bn, according to Teal Group, a consulting firm. The savings offered by remotely piloted drones—in money and aviators’ lives—will lead many countries to add them to their arsenals, although America and Israel will remain the biggest users."
+        ]
+      },
+      {
+        "component": "Industry",
+        "props": {
+          "title": "Energy"
+        },
+        "content": [
+          "Global energy consumption will grow by 3% in 2012, only modestly faster than the year before. Growth in oil supply will outpace demand, with the recovery in Libyan production and ongoing expansion in Iraqi output boosting OPEC’s share of the market. Oil prices will moderate in 2012, subject to the short-term volatility that is now a feature of the market. Benchmark Brent crude will average $90/barrel, down from $110 in 2011. China and India remain keen on coal, pushing consumption of the sooty stuff further above petroleum products in the global energy mix. Natural gas, however, will enjoy the biggest growth in demand among the major fuels. The discovery of vast stores of shale gas will lead to more exploration, bringing a significant shift in the world’s energy mix. Moreover, the location of the biggest shale reserves—China, America, Argentina, Mexico and South Africa top the list—promises to upset the traditional geopolitics of energy supply.The use of high-pressure chemicals to crack shale deposits deep underground is environmentally contentious. Some countries, like France, have all but banned drilling for shale gas, while others, like Poland, have no such qualms and will open a number of new wells in 2012. A US Environmental Protection Agency report into the impact of shale-gas drilling on groundwater, due by the end of the year, will be keenly read.<strong>To watch:</strong> Atomic dragon. China, the world’s most enthusiastic builder of reactors, put all atomic approvals on hold following Japan’s nuclear crisis. Work on China’s enormous new stable of reactors will resume in 2012; developers want to make up for lost time on the way to meeting the government’s plan for 70 gigawatts of nuclear capacity in 2020, a sevenfold increase from 2010. That’s equivalent to adding atomic power equal to Australia’s entire electricity grid in less than ten years."
+        ]
+      }
+    ],
+    "variantName": "world-in-industries",
+    "metaTags": [
+      {
+        "property": "og:type",
+        "content": "world-in-numbers"
+      },
+      {
+        "property": "og:title",
+        "content": "Europe"
+      },
+      {
+        "property": "og:description",
+        "content": ""
+      },
+      {
+        "property": "og:image",
+        "content": ""
+      },
+      {
+        "property": "og:image:width",
+        "content": ""
+      },
+      {
+        "property": "og:image:height",
+        "content": ""
+      },
+      {
+        "property": "twi_continent:published_time",
+        "content": "2015-11-06T14:42:09.654Z"
+      },
+      {
+        "property": "twi_continent:modified_time",
+        "content": "2015-11-19T17:30:35.771Z"
+      },
+      {
+        "property": "world-in-numbers:section",
+        "content": ""
+      }
+    ]
+  }
+}
