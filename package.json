@@ -24,14 +24,14 @@
   "assets": [
     "assets/apple.svg",
     "assets/google.svg",
-    "assets/mobile.svg",
-    "stubbed/article.json"
+    "assets/mobile.svg"
   ],
   "directories": {
     "lib": "lib",
     "site": "site",
     "src": "src",
-    "test": "test"
+    "test": "test",
+    "stubbed": "stubbed"
   },
   "repository": {
     "type": "git",
@@ -47,8 +47,9 @@
     "build:images": "svgo --pretty --config=.svgo.yml -f images -o assets",
     "build:js": "babel $npm_package_directories_src -d $npm_package_directories_lib --source-maps inline",
     "ci": "sh ./build.sh",
-    "predoc": "mkdir -p $npm_package_directories_site",
+    "predoc": "mkdir -p $npm_package_directories_site/stubbed",
     "doc": "npm-run-all --parallel doc:*",
+    "doc:stubbed": "cp $npm_package_directories_stubbed/*.json $npm_package_directories_site/stubbed",
     "doc:assets": "npm-assets $npm_package_directories_site",
     "doc:css": "postcss $npm_package_config_doc_css_options -o $npm_package_directories_site/bundle.css $npm_package_directories_src/example.css",
     "doc:html": "hbs -D package.json -H @economist/doc-pack -o $npm_package_directories_site $npm_package_config_doc_html_files",
@@ -69,6 +70,7 @@
     "prewatch:doc": "npm run predoc",
     "watch:doc": "npm-run-all --parallel watch:doc:*",
     "watch:doc:assets": "npm run doc:assets",
+    "watch:doc:stubbed": "npm run doc:stubbed",
     "watch:doc:css": "npm run doc:css -- --watch",
     "watch:doc:html": "npm run doc:html -- --watch",
     "watch:doc:js": "watchify $npm_package_config_doc_js_options $npm_package_directories_test/*.js -o $npm_package_directories_site/bundle.js",
